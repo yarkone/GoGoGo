@@ -1,0 +1,548 @@
+@charset "utf-8";
+
+.container{
+  width: 100%;
+  position: relative;
+}
+.topad{
+  height: $topad;
+  background: #41BAE1;
+  overflow: hidden;
+  position: relative;
+  .img_a{
+    @extend .error;
+    display: block;
+    height: $topad;
+  }
+}
+.header {
+  height: $header;
+  border-bottom: 1px solid #ddd;
+  background: $gray;
+  overflow: hidden;
+  position: relative;
+}
+.header_con {
+  @extend .error;
+  height: $header;
+}
+.header_notice{
+  float: left;
+  width: 225px;
+  height: $header;
+  position: relative;
+  overflow: hidden;
+  .notice_img{
+    float: left;
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    @include pos(relative,10px);
+    background: url("../images/common/icons.png") no-repeat right bottom;
+  }
+  .notice_span{
+    float: left;
+    display: inline-block;
+    height: $header;
+    line-height: $header;
+    margin-left: 5px;
+  }
+  .show_notice{
+    @include pos(absolute,auto,0);
+    width: 180px;
+    height: 30px;
+    li{
+      @include ell();
+      line-height: 28px;
+      height:30px;
+      a{
+        @include link-colors();
+      }
+    }
+  }
+}
+.header_right_ul{
+  height: 16px;
+  float: right;
+  margin-top: 5px;
+  overflow: hidden;
+  li{
+    float: left;
+    border-right: 1px solid $font-color;
+    padding: 0 10px;
+    a{
+      @include link-colors();
+      img{
+        @include pos(relative,1px,5px);
+      }
+    }
+    .red_a{
+      color: $red;
+    }
+  }
+  .last{
+    border:none;
+  }
+}
+.top{
+  height:$top;
+  overflow: hidden;
+  position: relative;
+  background: #FFF;
+}
+.top_con {
+  @extend .error;
+  height: $top;
+  position: relative;
+}
+.top_logo{
+  float: left;
+  width: 206px;
+  height: 76px;
+  margin-top: 26px;
+  a{
+    display: block;
+    height: 76px;
+    img{
+      float: left;
+    }
+  }
+}
+.top_search_box{
+  @include pos(absolute,25%,auto,auto,50%);
+  margin-left: -208px;
+  width:416px;
+  height:32px;
+  border:2px solid $red;
+  .txt{
+    width:325px;
+    height:16px;
+    float: left;
+    border:none;
+    outline:none;
+    padding:8px;
+  }
+  .btn{
+    float: left;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    width:75px;
+    height:32px;
+    background: $red;
+    text-align: center;
+    line-height:32px;
+    color: #FFF;
+  }
+}
+.top_car{
+  float: right;
+  margin-top: 28px;
+  width:138px;
+  height:30px;
+  border:1px solid #ddd;
+  position: relative;
+  .car_img1{
+    //@include pos(relative,5px, auto, auto, 12px);
+    margin:5px 0 0 12px;
+    width:19px;
+    height:18px;
+    background: url(../images/common/icon2.png) no-repeat 0 -66px;
+  }
+  .car_img2{
+    @include pos(relative,-4px, auto, auto, 18px);
+    width:11px;
+    height:7px;
+    background: url(../images/common/icon2.png) no-repeat -189px -60px;
+  }
+  .car_number{
+    @include pos(absolute,-7px, 22px, auto, auto);
+    width:22px;
+    height:14px;
+    text-align: center;
+    line-height: 14px;
+    color: #FFF;
+    font-weight: bold;
+    background: url(../images/common/icon2.png) no-repeat 0 -101px;
+  }
+  a{
+    @include link-colors();
+    @include pos(relative,-4px, auto, auto, 8px);
+  }
+}
+.nav{
+  height:$nav;
+  background: $red;
+  overflow: hidden;
+  position: relative;
+}
+.nav_con{
+  @extend .error;
+  height: $nav;
+  position: relative;
+}
+.nav_ul{
+  float: left;
+  overflow: hidden;
+  li{
+    float: left;
+    a{
+      display: inline-block;
+      height:$nav;
+      line-height: $nav;
+      padding:0 20px;
+      color: #FFF;
+      font-size: 15px;
+      font-weight: 700;
+      img{
+        @include pos(relative,3px, auto, auto, -1px);
+      }
+    }
+  }
+  .nav_first_li{
+     background: #bc0600;
+   }
+}
+.nav_classify{
+  width:134px;
+  height:$nav;
+  float: right;
+  background: url(../images/index/searchbar.jpg) no-repeat 0 -65px;
+  &:hover{
+    background-position: 0 -133px;
+  }
+}
+.banner{
+  height:$banner;
+  overflow: hidden;
+  position: relative;
+}
+.banner_con{
+  position: absolute;
+  left:50%;
+  width:1920px;
+  margin-left:-950px;
+  height:$banner;
+  overflow: hidden;
+}
+.banner_scroll{
+  width:11520px;
+  li{
+    float: left;
+  }
+}
+.banner_prev,.banner_next{
+  display: block;
+  width:30px;
+  height:60px;
+  background: url(../images/common/scroll.png) no-repeat;
+
+}
+.banner_prev{
+  @include pos(absolute,140px,auto,auto,460px);
+}
+.banner_next{
+  @include pos(absolute,140px,auto,auto,1390px);
+  background-position: 0 -76px;
+}
+.banner_nav{
+  width:80px;
+  height:20px;
+  @include pos(absolute,auto,auto,15px,50%);
+  margin-left: -40px;
+  text-align: center;
+  span{
+    display: inline-block;
+    width:10px;
+    height:10px;
+    @include border-radius(5px);
+    background: #859694;
+  }
+  .hover{
+    background: $red;
+  }
+}
+
+.content_con{
+  @extend .error;
+  height:$content_choice;
+  margin-top: 22px;
+}
+.day_choice{
+  float: left;
+  width:700px;
+  height:$content_choice - 2;
+  background: #FFF;
+  border:1px solid $gray_border;
+}
+.day_choice_top{
+  width:4200px;
+  height:305px;
+  li{
+    float: left;
+    width:700px;
+    height:305px;
+    a{
+      display: block;
+      width:700px;
+      height:305px;
+      color: #000;
+      dl{
+        dt{
+          float: left;
+          img{
+            width:340px;
+            height:305px;
+          }
+        }
+        dd{
+          float: left;
+          width:290px;
+          height:100px;
+          margin:42px 0 0 20px;
+          p{
+            color: $font-color;
+            margin-top: 5px;
+          }
+          h1{
+            color: $red;
+            margin-top: 10px;
+            float: left;
+            font-size: 30px;
+            span{
+              font-size: 10px;
+            }
+          }
+          .span{
+            display: block;
+            float: left;
+            color: #FFF;
+            width: 34px;
+            height:15px;
+            background: #ff504a;
+            text-align: center;
+            line-height: 15px;
+            margin-top: 10px;
+            @include border-radius(10px);
+          }
+          .day_choice_discuss{
+            margin-left: 39px;
+            color: #999;
+          }
+          .phone_number{
+            @include pos(relative,-10px,auto,auto,5px);
+          }
+        }
+      }
+    }
+
+  }
+}
+.day_choice_bottom{
+  width:700px;
+  height:94px;
+  border-top: 1px solid $gray_border;
+  img{
+    float: left;
+    display: block;
+    width:66px;
+    height:66px;
+    margin:13px 20px 0 0;
+  }
+  .day_choice_bottom_first{
+    margin-left: 15px;
+  }
+}
+.shopping{
+  float: right;
+  width: 290px;
+  height:$content_choice - 2;
+  background: #FFF;
+  border:1px solid $gray_border;
+}
+.shopping_top{
+  width:290px;
+  height:40px;
+  border-bottom:1px solid $gray_border;
+  img{
+    display: block;
+    float: left;
+    margin:12px 0 0 15px;
+  }
+  h2{
+    float: left;
+    margin:10px 0 0 4px;
+  }
+}
+.shopping_bottom{
+  width:290px;
+  height:359px;
+}
+.shopping_ul{
+  width:258px;
+  height:359px;
+  margin: 0 auto;
+  .li{
+    width:258px;
+    border-bottom: 1px dashed $gray_border
+  }
+  .shopping_ul_li1{
+    @extend .li;
+    height: 150px;
+    dt{
+      width:115px;
+      height:115px;
+      float: left;
+      margin-top: 20px;
+    }
+    dd{
+      width:128px;
+      height:117px;
+      float: left;
+      margin:20px 0 0 15px;
+      h2{
+        color: $red;
+        margin-top: 8px;
+      }
+      img{
+        display: block;
+        float: left;
+        @include pos(relative,3px);
+      }
+      div{
+        margin-top: 8px;
+        width:91px;
+        height:23px;
+        @include border-radius(3px);
+        background: $red;
+        text-align: center;
+        line-height: 23px;
+        color: #FFF;
+      }
+    }
+  }
+  .shopping_ul_li2{
+    @extend .li;
+    height: 140px;
+    width:260px;
+    position: relative;
+    overflow: hidden;
+    .shopping_li2_title{
+      margin-top: 16px;
+      span{
+        color: $red;
+      }
+    }
+    .live{
+      width:530px;
+      height:80px;
+      li{
+        float: left;
+        width:80px;
+        height:80px;
+        margin-right:10px;
+        img{
+          display: block;
+          width:80px;
+          height:80px;
+        }
+      }
+      .live_last{
+        margin:0;
+      }
+    }
+    a{
+      display: block;
+      width: 30px;
+      height: 60px;
+      position: absolute;
+      top: 44px;
+      z-index: 3;
+      &.live_prev {
+        left: 0;
+        background: url(../images/common/scroll.png) no-repeat 0 0;
+      }
+      &.live_prev:hover {
+        background-position: -92px -76px;
+      }
+      &.live_next {
+        right: 0;
+        background: url(../images/common/scroll.png) no-repeat 0 -76px;
+      }
+      &.live_next:hover {
+        background-position: -92px 0;
+      }
+    }
+  }
+  .shopping_ul_li3{
+    @extend .li;
+    height: 67px;
+    border:none;
+    .live_bottom{
+      width:260px;
+      height:40px;
+      margin: 14px 0 0 10px;
+      li{
+        width:55px;
+        height:40px;
+        margin-right: 30px;
+        float: left;
+        text-align: center;
+        a{
+          display: inline-block;
+          width:18px;
+          height:15px;
+          background: url(../images/common/icons.png) no-repeat;
+          &.live_a1{
+            background-position: 0 -201px;
+          }
+          &.live_a2{
+            background-position: -26px -201px;
+          }
+          &.live_a3{
+            background-position: -56px -201px;
+          }
+        }
+      }
+    }
+  }
+}
+.well_chosen{
+  @extend .error;
+  height:$well_chosen;
+}
+.top_line{
+  position: relative;
+  width:$webw;
+  height:60px;
+  border-bottom: 2px solid #333;
+  img{
+    position: absolute;
+    left:50%;
+    margin-left: -125px;
+    display: block;
+    width:250px;
+    bottom:-28px;
+  }
+}
+.four_box{
+  margin-top: 40px;
+  a{
+    display: block;
+    width:490px;
+    height:270px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    &.right_a{
+      margin-right:0;
+    }
+    &.bottom_a{
+      margin-bottom:0;
+    }
+  }
+}
+.golbal_goods{
+  @extend .error;
+  overflow: hidden;
+}

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@mixin link-colors($normal : #666, $hover : #F90800, $visited : #666) {
+  color: $normal;
+  &:hover {
+    color: $hover;
+    text-decoration: underline;
+  }
+  &:visited { color: $visited; }
+}
+/* 圆角 */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+/* ellipsis，省略号，当超过宽度时，显示省略号： */
+@mixin ell() {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+/* 定位 */
+@mixin pos ($type, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: $type;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

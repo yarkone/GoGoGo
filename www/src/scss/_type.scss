@@ -1,0 +1,20 @@
+@charset "UTF-8";
+*{
+  margin:0;
+  padding:0;
+}
+html,body{
+  width: 100%;
+  font-family: "\5FAE\8F6F\96C5\9ED1",tahoma,arial,"\u5b8b\u4f53",sans-serif,Microsoft YaHei !important;
+  font-size: 12px;
+  background: $gray;
+}
+a{
+  text-decoration: none;
+}
+ol li,ul li{
+  list-style: none;
+}
+img{
+  border:none;
+}
