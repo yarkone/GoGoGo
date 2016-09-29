@@ -43,11 +43,16 @@
                         <input type="text" placeholder="请输入商品名称或货号" class="txt" />
                         <input type="button" class="btn" value="搜索" />
                     </div>
-                    <div class="top_car">
+                    <div class="top_car" id="top_car">
                         <img src="images/common/icon2.png" alt="" class="car_img1"/>
-                        <a href="html/car.html">我的购物车</a>
+                        <a href="html/car.html" class="car_font">我的购物车</a>
                         <span class="car_number">0</span>
                         <img src="images/common/icon2.png" alt="" class="car_img2"/>
+                        <div class="car_box" id="car_box">
+                            <div class="carlist">
+                                <p>购物车还没有商品，快去挑选吧~</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -62,20 +67,102 @@
                         <li><a href="index.html">服饰</a></li>
                         <li><a href="index.html">海外购</a></li>
                     </ul>
-                    <div class="nav_classify"></div>
+                    <div class="nav_classify" id="nav_classify"></div>
+                    <div id="nav_hover" class="nav_hover">
+                        <ul class="nav_out">
+                            <li class="nav_out_li">
+                                <div class="out_top">
+                                    <img src="images/index/hover_li1.jpg" alt="" />
+                                    <h2>品质厨房</h2>
+                                </div>
+                                <ul class="nav_info">
+                                    <li><a href="#">电视热销</a></li>
+                                    <li><a href="#">品质厨具</a></li>
+                                    <li><a href="#">厨房电器</a></li>
+                                    <li><a href="#">厨房用具</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_out_li">
+                                <div class="out_top">
+                                    <img src="images/index/hover_li2.jpg" alt="" />
+                                    <h2>美食•民生</h2>
+                                </div>
+                                <ul class="nav_info">
+                                    <li><a href="#">电视热销</a></li>
+                                    <li><a href="#">进口食品</a></li>
+                                    <li><a href="#">营养保健</a></li>
+                                    <li><a href="#">特产零食</a></li>
+                                    <li><a href="#">粮油干货</a></li>
+                                    <li><a href="#">就睡茶饮</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_out_li">
+                                <div class="out_top">
+                                    <img src="images/index/hover_li3.jpg" alt="" />
+                                    <h2>健康生活</h2>
+                                </div>
+                                <ul class="nav_info">
+                                    <li><a href="#">电视热销</a></li>
+                                    <li><a href="#">服装内衣</a></li>
+                                    <li><a href="#">鞋包服饰</a></li>
+                                    <li><a href="#">旅游户外</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_out_li">
+                                <div class="out_top">
+                                    <img src="images/index/hover_li4.jpg" alt="" />
+                                    <h2>美丽穿戴</h2>
+                                </div>
+                                <ul class="nav_info">
+                                    <li><a href="#">珍珠财宝</a></li>
+                                    <li><a href="#">营养保健</a></li>
+                                    <li><a href="#">翡翠玉石</a></li>
+                                    <li><a href="#">天然木饰</a></li>
+                                    <li><a href="#">文化收藏</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_out_li">
+                                <div class="out_top">
+                                    <img src="images/index/hover_li5.jpg" alt="" />
+                                    <h2>珠宝收藏</h2>
+                                </div>
+                                <ul class="nav_info">
+                                    <li><a href="#">美肤靓装</a></li>
+                                    <li><a href="#">品牌护肤</a></li>
+                                    <li><a href="#">洗护狐狸</a></li>
+                                    <li><a href="#">彩妆香水</a></li>
+                                    <li><a href="#">美容仪器</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_out_li nav_out_li_last">
+                                <div class="out_top">
+                                    <img src="images/index/hover_li6.jpg" alt="" />
+                                    <h2>美肤靓装</h2>
+                                </div>
+                                <ul class="nav_info">
+                                    <li><a href="#">进口食品</a></li>
+                                    <li><a href="#">营养保健</a></li>
+                                    <li><a href="#">特产零食</a></li>
+                                    <li><a href="#">粮油干货</a></li>
+                                    <li><a href="#">就睡茶饮</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
             </div>
             <div id="banner" class="banner">
                 <div id="banner_con" class="banner_con">
-                    <a href="" class="banner_prev"></a>
-                    <a href="" class="banner_next"></a>
+                    <a href="javascript:void(0)" class="banner_prev" id="banner_prev"></a>
+                    <a href="javascript:void(0)" class="banner_next" id="banner_next"></a>
                     <ul id="banner_scroll" class="banner_scroll">
-                        <li><img src="images/index/banner_pic1.jpg" alt="" /></li>
-                        <li><img src="images/index/banner_pic2.jpg" alt="" /></li>
-                        <li><img src="images/index/banner_pic3.jpg" alt="" /></li>
-                        <li><img src="images/index/banner_pic4.jpg" alt="" /></li>
-                        <li><img src="images/index/banner_pic5.jpg" alt="" /></li>
-                        <li><img src="images/index/banner_pic1.jpg" alt="" /></li>
+                        <li><a href="#"><img src="images/index/banner_pic1.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="images/index/banner_pic2.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="images/index/banner_pic3.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="images/index/banner_pic4.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="images/index/banner_pic5.jpg" alt="" /></a></li>
+                        <li><a href="#"><img src="images/index/banner_pic1.jpg" alt="" /></a></li>
                     </ul>
                     <div id="banner_nav" class="banner_nav">
                         <span class="hover"></span>
@@ -86,109 +173,1237 @@
                     </div>
                 </div>
             </div>
-            <div id="content_con" class="content_con">
-                <div id="day_choice" class="day_choice">
-                    <div class="day_choice_top">
-                        <ul class="day_choice_ul">
-                            <li><a href="#">
-                                <dl>
-                                    <dt><img src="images/index/day_choice_big1.jpg" alt="" /></dt>
-                                    <dd>
-                                        <h2>汤臣倍健多中维生素混合型（单件约</h2>
-                                        <p>每日一片，补充多种维生素矿物质。采用缓释技术，持续补充</p>
-                                        <h1><span>￥</span>159</h1>
-                                        <span class="span">直降</span>
-                                    </dd>
-                                    <dd>
-                                        <img src="images/index/head_img.jpg" alt="" />
-                                        <span class="phone_number">138****1234</span>
-                                        <p class="day_choice_discuss">好评！好评！<br />好评！好评！</p>
-                                    </dd>
-                                </dl>
-                            </a></li>
-                            <li><a href="#">
-
-                            </a></li>
-                            <li><a href="#">
-
-                            </a></li>
-                            <li><a href="#">
-
-                            </a></li>
-                            <li><a href="#">
-
-                            </a></li>
-                            <li><a href="#">
-
-                            </a></li>
-                        </ul>
+            <div id="content" class="content">
+                <div id="content_con" class="content_con">
+                    <div id="day_choice" class="day_choice">
+                        <div class="day_choice_top">
+                            <div class="choice_img"></div>
+                            <div class="day_prev" id="day_prev"></div>
+                            <div class="day_next" id="day_next"></div>
+                            <ul class="day_choice_ul">
+                                <li><a href="#">
+                                    <dl>
+                                        <dt><img src="images/index/day_choice_big1.jpg" alt="" /></dt>
+                                        <dd>
+                                            <h2>汤臣倍健多中维生素混合型（单件约</h2>
+                                            <p>每日一片，补充多种维生素矿物质。采用缓释技术，持续补充</p>
+                                            <h1><span>￥</span>159</h1>
+                                            <span class="span">直降</span>
+                                        </dd>
+                                        <dd>
+                                            <img src="images/index/head_img.jpg" alt="" />
+                                            <span class="phone_number">138****1234</span>
+                                            <p class="day_choice_discuss">好评！好评！<br />好评！好评！</p>
+                                        </dd>
+                                    </dl>
+                                </a></li>
+                                <li><a href="#">
+                                    <dl>
+                                        <dt><img src="images/index/day_choice_big2.jpg" alt="" /></dt>
+                                        <dd>
+                                            <h2>汤臣倍健多中维生素混合型（单件约</h2>
+                                            <p>每日一片，补充多种维生素矿物质。采用缓释技术，持续补充</p>
+                                            <h1><span>￥</span>159</h1>
+                                            <span class="span">直降</span>
+                                        </dd>
+                                        <dd>
+                                            <img src="images/index/head_img.jpg" alt="" />
+                                            <span class="phone_number">138****1234</span>
+                                            <p class="day_choice_discuss">好评！好评！<br />好评！好评！</p>
+                                        </dd>
+                                    </dl>
+                                </a></li>
+                                <li><a href="#">
+                                    <dl>
+                                        <dt><img src="images/index/day_choice_big3.jpg" alt="" /></dt>
+                                        <dd>
+                                            <h2>汤臣倍健多中维生素混合型（单件约</h2>
+                                            <p>每日一片，补充多种维生素矿物质。采用缓释技术，持续补充</p>
+                                            <h1><span>￥</span>159</h1>
+                                            <span class="span">直降</span>
+                                        </dd>
+                                        <dd>
+                                            <img src="images/index/head_img.jpg" alt="" />
+                                            <span class="phone_number">138****1234</span>
+                                            <p class="day_choice_discuss">好评！好评！<br />好评！好评！</p>
+                                        </dd>
+                                    </dl>
+                                </a></li>
+                                <li><a href="#">
+                                    <dl>
+                                        <dt><img src="images/index/day_choice_big4.jpg" alt="" /></dt>
+                                        <dd>
+                                            <h2>汤臣倍健多中维生素混合型（单件约</h2>
+                                            <p>每日一片，补充多种维生素矿物质。采用缓释技术，持续补充</p>
+                                            <h1><span>￥</span>159</h1>
+                                            <span class="span">直降</span>
+                                        </dd>
+                                        <dd>
+                                            <img src="images/index/head_img.jpg" alt="" />
+                                            <span class="phone_number">138****1234</span>
+                                            <p class="day_choice_discuss">好评！好评！<br />好评！好评！</p>
+                                        </dd>
+                                    </dl>
+                                </a></li>
+                                <li><a href="#">
+                                    <dl>
+                                        <dt><img src="images/index/day_choice_big5.jpg" alt="" /></dt>
+                                        <dd>
+                                            <h2>汤臣倍健多中维生素混合型（单件约</h2>
+                                            <p>每日一片，补充多种维生素矿物质。采用缓释技术，持续补充</p>
+                                            <h1><span>￥</span>159</h1>
+                                            <span class="span">直降</span>
+                                        </dd>
+                                        <dd>
+                                            <img src="images/index/head_img.jpg" alt="" />
+                                            <span class="phone_number">138****1234</span>
+                                            <p class="day_choice_discuss">好评！好评！<br />好评！好评！</p>
+                                        </dd>
+                                    </dl>
+                                </a></li>
+                                <li><a href="#">
+                                    <dl>
+                                        <dt><img src="images/index/day_choice_big6.jpg" alt="" /></dt>
+                                        <dd>
+                                            <h2>汤臣倍健多中维生素混合型（单件约</h2>
+                                            <p>每日一片，补充多种维生素矿物质。采用缓释技术，持续补充</p>
+                                            <h1><span>￥</span>159</h1>
+                                            <span class="span">直降</span>
+                                        </dd>
+                                        <dd>
+                                            <img src="images/index/head_img.jpg" alt="" />
+                                            <span class="phone_number">138****1234</span>
+                                            <p class="day_choice_discuss">好评！好评！<br />好评！好评！</p>
+                                        </dd>
+                                    </dl>
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="day_choice_bottom">
+                            <div class="choice_span_box">
+                                <span id="bottom_first_span"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="choice_img_box">
+                                <img src="images/index/day_choice_big1.jpg" alt="" class="day_choice_bottom_first"/>
+                                <img src="images/index/day_choice_big2.jpg" alt="" />
+                                <img src="images/index/day_choice_big3.jpg" alt="" />
+                                <img src="images/index/day_choice_big4.jpg" alt="" />
+                                <img src="images/index/day_choice_big5.jpg" alt="" />
+                                <img src="images/index/day_choice_big6.jpg" alt="" />
+                            </div>
+                        </div>
                     </div>
-                    <div class="day_choice_bottom">
-                        <img src="images/index/day_choice_big1.jpg" alt="" class="day_choice_bottom_first"/>
-                        <img src="images/index/day_choice_big2.jpg" alt="" />
-                        <img src="images/index/day_choice_big3.jpg" alt="" />
-                        <img src="images/index/day_choice_big4.jpg" alt="" />
-                        <img src="images/index/day_choice_big5.jpg" alt="" />
-                        <img src="images/index/day_choice_big6.jpg" alt="" />
+                    <div id="shopping" class="shopping">
+                        <div class="shopping_top">
+                            <img src="images/index/shopping_tv.jpg" alt="" />
+                            <h2>优购物</h2>
+                        </div>
+                        <div class="shopping_bottom">
+                            <ul class="shopping_ul">
+                                <li class="shopping_ul_li1"><a href="#">
+                                    <dl>
+                                        <dt><img src="images/index/shooping_ul2.jpg" alt="" /></dt>
+                                        <dd>
+                                            <p>双立人TWIN NovaPlus欢乐时光锅具套组（锅</p>
+                                            <h2><span>￥</span>2288</h2>
+                                            <img src="images/index/shoppping_clock.jpg" alt="" />
+                                            <p>距离结束00:00:00</p>
+                                            <div>立即抢购></div>
+                                        </dd>
+                                    </dl>
+                                </a></li>
+                                <li class="shopping_ul_li2">
+                                    <h3 class="shopping_li2_title"><span>24小时</span>直播预告</h3>
+                                    <a href="javascript:void(0)" id="live_prev" class="live_a live_prev"></a>
+                                    <a href="javascript:void(0)" id="live_next" class="live_a live_next"></a>
+                                    <ul class="live">
+                                        <a href="#"><li><img src="images/index/live_pic1.jpg" alt=""/></li></a>
+                                        <a href="#"><li><img src="images/index/live_pic2.jpg" alt=""/></li></a>
+                                        <a href="#"><li><img src="images/index/live_pic3.jpg" alt=""/></li></a>
+                                        <a href="#"><li><img src="images/index/live_pic4.jpg" alt=""/></li></a>
+                                        <a href="#"><li><img src="images/index/live_pic5.jpg" alt=""/></li></a>
+                                        <a href="#"><li class="live_last"><img src="images/index/live_pic6.jpg" alt=""/></li></a>
+                                    </ul>
+                                </li>
+                                <li class="shopping_ul_li3">
+                                    <ul class="live_bottom">
+                                        <a href="#"><li><span class="live_a1"></span><p>TV直播表</p></li></a>
+                                        <a href="#"><li><span class="live_a2"></span><p>今日推荐</p></li></a>
+                                        <a href="#"><li><span class="live_a3"></span><p>热销榜单</p></li></a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div id="shopping" class="shopping">
-                    <div class="shopping_top">
-                        <img src="images/index/shopping_tv.jpg" alt="" />
-                        <h2>优购物</h2>
+                <div id="well_chosen" class="well_chosen">
+                    <div class="top_line">
+                        <img src="images/index/well_chosen.jpg" alt="" />
                     </div>
-                    <div class="shopping_bottom">
-                        <ul class="shopping_ul">
-                            <li class="shopping_ul_li1">
-                                <dl>
-                                    <dt><img src="images/index/shooping_ul2.jpg" alt="" /></dt>
-                                    <dd>
-                                        <p>双立人TWIN NovaPlus欢乐时光锅具套组（锅</p>
-                                        <h2><span>￥</span>2288</h2>
-                                        <img src="images/index/shoppping_clock.jpg" alt="" />
-                                        <p>距离结束00:00:00</p>
-                                        <div>立即抢购></div>
-                                    </dd>
-                                </dl>
-                            </li>
-                            <li class="shopping_ul_li2">
-                                <h3 class="shopping_li2_title"><span>24小时</span>直播预告</h3>
-                                <a href="javascript:void(0)" id="live_prev" class="live_prev"></a>
-                                <a href="javascript:void(0)" id="live_next" class="live_next"></a>
-                                <ul class="live">
-                                    <li><img src="images/index/live_pic1.jpg" alt=""/></li>
-                                    <li><img src="images/index/live_pic2.jpg" alt=""/></li>
-                                    <li><img src="images/index/live_pic3.jpg" alt=""/></li>
-                                    <li><img src="images/index/live_pic4.jpg" alt=""/></li>
-                                    <li><img src="images/index/live_pic5.jpg" alt=""/></li>
-                                    <li class="live_last"><img src="images/index/live_pic6.jpg" alt=""/></li>
-                                </ul>
-                            </li>
-                            <li class="shopping_ul_li3">
-                                <ul class="live_bottom">
-                                    <li><a href="#" class="live_a1"></a><p>TV直播表</p></li>
-                                    <li><a href="#" class="live_a2"></a><p>今日推荐</p></li>
-                                    <li><a href="#" class="live_a3"></a><p>热销榜单</p></li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <div class="four_box">
+                        <a href="#"><img src="images/index/hour_four1.jpg" alt=""></a>
+                        <a href="#" class="right_a"><img src="images/index/hour_four2.jpg" alt=""></a>
+                        <a href="#"class="bottom_a"><img src="images/index/hour_four3.jpg" alt=""></a>
+                        <a href="#" class="right_a bottom_a"><img src="images/index/hour_four4.jpg" alt=""></a>
                     </div>
+                </div>
+                <div class="golbal_goods">
+                    <div class="top_line"><img src="images/index/golbal_goods.jpg" alt="" /></div>
+                    <ul class="golbal_goods_ul">
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic1.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic2.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic3.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic4.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic5.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic6.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic7.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic8.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic9.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic10.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic11.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic12.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic13.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic14.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic15.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic16.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic17.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic18.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic19.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic20.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic21.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic22.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic23.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic24.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic25.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic26.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic27.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic28.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic29.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic30.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic31.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic32.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic33.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic34.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic35.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic36.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic37.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic38.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic39.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic40.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic41.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic42.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic43.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic44.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic45.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic46.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic47.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="golbal_li">
+                            <div class="golbal_li_top">
+                                <a href="#">
+                                    <img src="images/index/three_box_pic48.jpg" alt="" class="golbal_product"/>
+                                    <p class="golbal_p1">晓芹海参抢先升级组（海参*60头+鲍鱼</p>
+                                    <p class="golbal_p2">【小编说】提货券在手，既食即提，一直都能吃到新鲜</p>
+                                    <div>
+                                        <p class="golbal_p3">￥<span>1399</span></p>
+                                        <span class="golbal_mail">包邮</span>
+                                        <p class="golbal_p4"><span>154人</span>已购买</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="golbal_li_bottom">
+                                <p class="golbal_p5">品牌，国内发货</p>
+                                <div>
+                                    <img src="images/index/shoppping_clock.jpg" alt="" />
+                                    <p class="golbal_p6">距离结束00:00:00</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div id="well_chosen" class="well_chosen">
-                <div class="top_line">
-                    <img src="images/index/well_chosen.jpg" alt="" />
+            <div class="footer">
+                <div class="footer_img"><img src="images/common/footer_ad.jpg" alt="" /></div>
+                <div class="footer_map">
+                    <ul class="map_out">
+                        <li class="map_out_li map_out_li_first">
+                            <ul class="map_info">
+                                <li class="map_info1">新手上路</li>
+                                <li>新用户注册</li>
+                                <li>忘记密码</li>
+                                <li>购物流程</li>
+                            </ul>
+                        </li>
+                        <li class="map_out_li">
+                            <ul class="map_info">
+                                <li class="map_info1">新手上路</li>
+                                <li>新用户注册</li>
+                                <li>忘记密码</li>
+                                <li>购物流程</li>
+                            </ul>
+                        </li>
+                        <li class="map_out_li">
+                            <ul class="map_info">
+                                <li class="map_info1">新手上路</li>
+                                <li>新用户注册</li>
+                                <li>忘记密码</li>
+                                <li>购物流程</li>
+                            </ul>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
-                <div class="four_box">
-                    <a href="#"><img src="images/index/hour_four1.jpg" alt=""></a>
-                    <a href="#" class="right_a"><img src="images/index/hour_four2.jpg" alt=""></a>
-                    <a href="#"class="bottom_a"><img src="images/index/hour_four3.jpg" alt=""></a>
-                    <a href="#" class="right_a bottom_a"><img src="images/index/hour_four4.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="golbal_goods">
-                <div class="golbal_goods_con">
-
+                <div class="footer_link">
+					<div></div>
                 </div>
             </div>
         </div>

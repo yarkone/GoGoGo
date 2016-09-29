@@ -1,11 +1,9 @@
 @charset "UTF-8";
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_type\.scss}line{font-family:\000032}}
 * {
   margin: 0;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_type\.scss}line{font-family:\000036}}
 html, body {
   width: 100%;
   font-family: "\5FAE\8F6F\96C5\9ED1",tahoma,arial,"\u5b8b\u4f53",sans-serif,Microsoft YaHei !important;
@@ -13,17 +11,15 @@ html, body {
   background: #f2f2f2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_type\.scss}line{font-family:\0000312}}
 a {
   text-decoration: none;
+  color: #666;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_type\.scss}line{font-family:\0000315}}
 ol li, ul li {
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_type\.scss}line{font-family:\0000318}}
 img {
   border: none;
 }
@@ -31,47 +27,39 @@ img {
 /* 圆角 */
 /* ellipsis，省略号，当超过宽度时，显示省略号： */
 /* 定位 */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_util\.scss}line{font-family:\000031}}
-.clearfix {
+.clearfix, .nav_out_li .nav_info, .content, .choice_span_box, .golbal_goods, .golbal_goods_ul, .footer {
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_util\.scss}line{font-family:\000033}}
-.clearfix:before, .clearfix:after {
+.clearfix:before, .nav_out_li .nav_info:before, .content:before, .choice_span_box:before, .golbal_goods:before, .golbal_goods_ul:before, .footer:before, .clearfix:after, .nav_out_li .nav_info:after, .content:after, .choice_span_box:after, .golbal_goods:after, .golbal_goods_ul:after, .footer:after {
   display: table;
   content: "";
   line-height: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_util\.scss}line{font-family:\000039}}
-.clearfix:after {
+.clearfix:after, .nav_out_li .nav_info:after, .content:after, .choice_span_box:after, .golbal_goods:after, .golbal_goods_ul:after, .footer:after {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_util\.scss}line{font-family:\0000313}}
-.error, .topad .img_a, .header_con, .top_con, .nav_con, .content_con, .well_chosen, .golbal_goods {
+.error, .topad .img_a, .header_con, .top_con, .nav_con, .content_con, .well_chosen, .golbal_goods, .footer_img, .footer_map {
   width: 1000px;
   margin: 0 auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\000033}}
 .container {
   width: 100%;
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\000037}}
 .topad {
   height: 80px;
   background: #41BAE1;
   overflow: hidden;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000312}}
 .topad .img_a {
   display: block;
   height: 80px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000318}}
 .header {
   height: 28px;
   border-bottom: 1px solid #ddd;
@@ -80,12 +68,10 @@ img {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000325}}
 .header_con {
   height: 28px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000329}}
 .header_notice {
   float: left;
   width: 225px;
@@ -93,7 +79,6 @@ img {
   position: relative;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000335}}
 .header_notice .notice_img {
   float: left;
   display: inline-block;
@@ -106,7 +91,6 @@ img {
   left: auto;
   background: url("../images/common/icons.png") no-repeat right bottom;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000343}}
 .header_notice .notice_span {
   float: left;
   display: inline-block;
@@ -114,7 +98,6 @@ img {
   line-height: 28px;
   margin-left: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000350}}
 .header_notice .show_notice {
   position: absolute;
   top: auto;
@@ -124,7 +107,6 @@ img {
   width: 180px;
   height: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000354}}
 .header_notice .show_notice li {
   display: block;
   white-space: nowrap;
@@ -134,47 +116,38 @@ img {
   line-height: 28px;
   height: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000358}}
 .header_notice .show_notice li a {
   color: #666;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_mixin\.scss}line{font-family:\000034}}
 .header_notice .show_notice li a:hover {
   color: #F90800;
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_mixin\.scss}line{font-family:\000038}}
 .header_notice .show_notice li a:visited {
   color: #666;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000364}}
 .header_right_ul {
   height: 16px;
   float: right;
   margin-top: 5px;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000369}}
 .header_right_ul li {
   float: left;
   border-right: 1px solid #666;
   padding: 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000373}}
 .header_right_ul li a {
   color: #666;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_mixin\.scss}line{font-family:\000034}}
 .header_right_ul li a:hover {
   color: #F90800;
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_mixin\.scss}line{font-family:\000038}}
 .header_right_ul li a:visited {
   color: #666;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000375}}
 .header_right_ul li a img {
   position: relative;
   top: 1px;
@@ -182,47 +155,38 @@ img {
   bottom: auto;
   left: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000379}}
 .header_right_ul li .red_a {
   color: #f70800;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000383}}
 .header_right_ul .last {
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000387}}
 .top {
   height: 105px;
-  overflow: hidden;
   position: relative;
   background: #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000393}}
 .top_con {
   height: 105px;
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\0000398}}
 .top_logo {
   float: left;
   width: 206px;
   height: 76px;
   margin-top: 26px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003103}}
 .top_logo a {
   display: block;
   height: 76px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003106}}
 .top_logo a img {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003111}}
 .top_search_box {
   position: absolute;
   top: 25%;
@@ -234,7 +198,6 @@ img {
   height: 32px;
   border: 2px solid #f70800;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003117}}
 .top_search_box .txt {
   width: 325px;
   height: 16px;
@@ -243,7 +206,6 @@ img {
   outline: none;
   padding: 8px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003125}}
 .top_search_box .btn {
   float: left;
   border: none;
@@ -257,7 +219,6 @@ img {
   color: #FFF;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003138}}
 .top_car {
   float: right;
   margin-top: 28px;
@@ -265,15 +226,14 @@ img {
   height: 30px;
   border: 1px solid #ddd;
   position: relative;
+  z-index: 101;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003145}}
 .top_car .car_img1 {
   margin: 5px 0 0 12px;
   width: 19px;
   height: 18px;
   background: url(../images/common/icon2.png) no-repeat 0 -66px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003152}}
 .top_car .car_img2 {
   position: relative;
   top: -4px;
@@ -284,7 +244,6 @@ img {
   height: 7px;
   background: url(../images/common/icon2.png) no-repeat -189px -60px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003158}}
 .top_car .car_number {
   position: absolute;
   top: -7px;
@@ -299,8 +258,7 @@ img {
   font-weight: bold;
   background: url(../images/common/icon2.png) no-repeat 0 -101px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003168}}
-.top_car a {
+.top_car .car_font {
   color: #666;
   position: relative;
   top: -4px;
@@ -308,40 +266,106 @@ img {
   bottom: auto;
   left: 8px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_mixin\.scss}line{font-family:\000034}}
-.top_car a:hover {
+.top_car .car_font:hover {
   color: #F90800;
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_mixin\.scss}line{font-family:\000038}}
-.top_car a:visited {
+.top_car .car_font:visited {
   color: #666;
 }
+.top_car .car_box {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: -1px;
+  width: 280px;
+  height: 84px;
+  border: 1px solid #ddd;
+  background: #FFF;
+  z-index: 100;
+}
+.top_car .car_box .carlist {
+  width: 280px;
+  height: 84px;
+}
+.top_car .car_box .carlist p {
+  float: left;
+  margin: 30px 70px;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003173}}
 .nav {
   height: 40px;
   background: #f70800;
-  overflow: hidden;
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003179}}
 .nav_con {
   height: 40px;
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003184}}
+.nav_hover {
+  display: none;
+  width: 998px;
+  height: 246px;
+  background: #FFF;
+  position: absolute;
+  top: 40px;
+  z-index: 20;
+  border: 1px solid #f70800;
+}
+
+.nav_out {
+  width: 998px;
+  height: 246px;
+}
+
+.nav_out_li {
+  width: 165px;
+  height: 246px;
+  float: left;
+  border-right: 1px solid #ededed;
+}
+.nav_out_li .out_top {
+  width: 135px;
+  height: 55px;
+  margin: 0 auto;
+  border-bottom: 1px dashed #ededed;
+}
+.nav_out_li .out_top img {
+  float: left;
+  display: block;
+  margin-top: 24px;
+  margin-left: 10px;
+}
+.nav_out_li .out_top h2 {
+  float: left;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.nav_out_li .nav_info {
+  margin: 0 auto;
+  width: 135px;
+}
+.nav_out_li .nav_info li {
+  text-align: center;
+  line-height: 30px;
+}
+.nav_out_li .nav_info li a {
+  color: #666;
+}
+
+.nav_out_li_last {
+  border: none;
+}
+
 .nav_ul {
   float: left;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003187}}
 .nav_ul li {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003189}}
 .nav_ul li a {
   display: inline-block;
   height: 40px;
@@ -351,7 +375,6 @@ img {
   font-size: 15px;
   font-weight: 700;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003197}}
 .nav_ul li a img {
   position: relative;
   top: 3px;
@@ -359,31 +382,23 @@ img {
   bottom: auto;
   left: -1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003202}}
 .nav_ul .nav_first_li {
   background: #bc0600;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003206}}
 .nav_classify {
   width: 134px;
   height: 40px;
   float: right;
   background: url(../images/index/searchbar.jpg) no-repeat 0 -65px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003211}}
-.nav_classify:hover {
-  background-position: 0 -133px;
-}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003215}}
 .banner {
   height: 340px;
   overflow: hidden;
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003220}}
 .banner_con {
   position: absolute;
   left: 50%;
@@ -393,24 +408,24 @@ img {
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003228}}
 .banner_scroll {
   width: 11520px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003230}}
 .banner_scroll li {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003234}}
 .banner_prev, .banner_next {
-  display: block;
+  display: none;
   width: 30px;
   height: 60px;
   background: url(../images/common/scroll.png) no-repeat;
+  z-index: 10;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003241}}
 .banner_prev {
   position: absolute;
   top: 140px;
@@ -419,7 +434,6 @@ img {
   left: 460px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003244}}
 .banner_next {
   position: absolute;
   top: 140px;
@@ -429,7 +443,6 @@ img {
   background-position: 0 -76px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003248}}
 .banner_nav {
   width: 80px;
   height: 20px;
@@ -441,7 +454,6 @@ img {
   margin-left: -40px;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003254}}
 .banner_nav span {
   display: inline-block;
   width: 10px;
@@ -450,20 +462,24 @@ img {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
+  cursor: pointer;
   background: #859694;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003261}}
 .banner_nav .hover {
   background: #f70800;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003266}}
+.content {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
 .content_con {
   height: 402px;
   margin-top: 22px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003271}}
 .day_choice {
   float: left;
   width: 700px;
@@ -472,58 +488,57 @@ img {
   border: 1px solid #ddd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003278}}
 .day_choice_top {
+  position: relative;
+  width: 700px;
+  height: 305px;
+  overflow: hidden;
+}
+
+.day_choice_ul {
   width: 4200px;
   height: 305px;
+  display: none;
+  position: absolute;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003281}}
-.day_choice_top li {
+.day_choice_ul li {
   float: left;
   width: 700px;
   height: 305px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003285}}
-.day_choice_top li a {
+.day_choice_ul li a {
   display: block;
   width: 700px;
   height: 305px;
   color: #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003291}}
-.day_choice_top li a dl dt {
+.day_choice_ul li a dl dt {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003293}}
-.day_choice_top li a dl dt img {
+.day_choice_ul li a dl dt img {
   width: 340px;
   height: 305px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003298}}
-.day_choice_top li a dl dd {
+.day_choice_ul li a dl dd {
   float: left;
   width: 290px;
   height: 100px;
   margin: 42px 0 0 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003303}}
-.day_choice_top li a dl dd p {
+.day_choice_ul li a dl dd p {
   color: #666;
   margin-top: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003307}}
-.day_choice_top li a dl dd h1 {
+.day_choice_ul li a dl dd h1 {
   color: #f70800;
   margin-top: 10px;
   float: left;
   font-size: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003312}}
-.day_choice_top li a dl dd h1 span {
+.day_choice_ul li a dl dd h1 span {
   font-size: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003316}}
-.day_choice_top li a dl dd .span {
+.day_choice_ul li a dl dd .span {
   display: block;
   float: left;
   color: #FFF;
@@ -538,13 +553,11 @@ img {
   -ms-border-radius: 10px;
   border-radius: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003328}}
-.day_choice_top li a dl dd .day_choice_discuss {
+.day_choice_ul li a dl dd .day_choice_discuss {
   margin-left: 39px;
   color: #999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003332}}
-.day_choice_top li a dl dd .phone_number {
+.day_choice_ul li a dl dd .phone_number {
   position: relative;
   top: -10px;
   right: auto;
@@ -552,93 +565,127 @@ img {
   left: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003341}}
+.choice_img {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  background: url(../images/common/icons.png) no-repeat;
+  width: 110px;
+  height: 44px;
+  z-index: 200;
+}
+
+.day_prev, .day_next {
+  width: 26px;
+  height: 45px;
+  position: absolute;
+  top: 130px;
+  background: url(../images/common/icons.png) no-repeat;
+  z-index: 200;
+  cursor: pointer;
+}
+
+.day_prev {
+  left: 0;
+  background-position: 0 -46px;
+}
+
+.day_next {
+  right: 0;
+  background-position: -28px -46px;
+}
+
 .day_choice_bottom {
   width: 700px;
   height: 94px;
   border-top: 1px solid #ddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003345}}
-.day_choice_bottom img {
+
+.choice_span_box span {
+  display: block;
+  position: relative;
+  top: -8px;
+  margin-right: 7px;
+  width: 86px;
+  height: 7px;
+  float: left;
+  background: url(../images/common/icons.png) no-repeat -500px -500px;
+}
+.choice_span_box .span {
+  background: url(../images/common/icons.png) no-repeat 0 -144px;
+}
+.choice_span_box #bottom_first_span {
+  margin-left: 10px;
+}
+
+.choice_img_box img {
   float: left;
   display: block;
   width: 66px;
   height: 66px;
-  margin: 13px 20px 0 0;
+  margin: 13px 25px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003352}}
-.day_choice_bottom .day_choice_bottom_first {
-  margin-left: 15px;
+.choice_img_box .day_choice_bottom_first {
+  margin-left: 25px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003356}}
 .shopping {
-  float: right;
+  float: left;
+  margin-left: 5px;
   width: 290px;
   height: 400px;
   background: #FFF;
   border: 1px solid #ddd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003363}}
 .shopping_top {
   width: 290px;
   height: 40px;
   border-bottom: 1px solid #ddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003367}}
 .shopping_top img {
   display: block;
   float: left;
   margin: 12px 0 0 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003372}}
 .shopping_top h2 {
   float: left;
   margin: 10px 0 0 4px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003377}}
 .shopping_bottom {
   width: 290px;
   height: 359px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003381}}
 .shopping_ul {
   width: 258px;
   height: 359px;
   margin: 0 auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003385}}
 .shopping_ul .li, .shopping_ul .shopping_ul_li1, .shopping_ul .shopping_ul_li2, .shopping_ul .shopping_ul_li3 {
   width: 258px;
   border-bottom: 1px dashed #ddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003389}}
 .shopping_ul .shopping_ul_li1 {
   height: 150px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003392}}
 .shopping_ul .shopping_ul_li1 dt {
   width: 115px;
   height: 115px;
   float: left;
   margin-top: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003398}}
 .shopping_ul .shopping_ul_li1 dd {
   width: 128px;
   height: 117px;
   float: left;
   margin: 20px 0 0 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003403}}
 .shopping_ul .shopping_ul_li1 dd h2 {
   color: #f70800;
   margin-top: 8px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003407}}
 .shopping_ul .shopping_ul_li1 dd img {
   display: block;
   float: left;
@@ -646,9 +693,8 @@ img {
   top: 3px;
   right: auto;
   bottom: auto;
-  left: auto;
+  left: -5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003412}}
 .shopping_ul .shopping_ul_li1 dd div {
   margin-top: 8px;
   width: 91px;
@@ -662,45 +708,39 @@ img {
   line-height: 23px;
   color: #FFF;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003424}}
 .shopping_ul .shopping_ul_li2 {
   height: 140px;
   width: 260px;
   position: relative;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003430}}
 .shopping_ul .shopping_ul_li2 .shopping_li2_title {
   margin-top: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003432}}
 .shopping_ul .shopping_ul_li2 .shopping_li2_title span {
   color: #f70800;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003436}}
 .shopping_ul .shopping_ul_li2 .live {
   width: 530px;
   height: 80px;
+  position: absolute;
+  top: 35px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003439}}
 .shopping_ul .shopping_ul_li2 .live li {
   float: left;
   width: 80px;
   height: 80px;
   margin-right: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003444}}
 .shopping_ul .shopping_ul_li2 .live li img {
   display: block;
   width: 80px;
   height: 80px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003450}}
 .shopping_ul .shopping_ul_li2 .live .live_last {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003454}}
-.shopping_ul .shopping_ul_li2 a {
+.shopping_ul .shopping_ul_li2 .live_a {
   display: block;
   width: 30px;
   height: 60px;
@@ -708,36 +748,32 @@ img {
   top: 44px;
   z-index: 3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003461}}
-.shopping_ul .shopping_ul_li2 a.live_prev {
+.shopping_ul .shopping_ul_li2 .live_a.live_prev {
   left: 0;
   background: url(../images/common/scroll.png) no-repeat 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003465}}
-.shopping_ul .shopping_ul_li2 a.live_prev:hover {
+.shopping_ul .shopping_ul_li2 .live_a.live_prev:hover {
   background-position: -92px -76px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003468}}
-.shopping_ul .shopping_ul_li2 a.live_next {
+.shopping_ul .shopping_ul_li2 .live_a.live_next {
   right: 0;
   background: url(../images/common/scroll.png) no-repeat 0 -76px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003472}}
-.shopping_ul .shopping_ul_li2 a.live_next:hover {
+.shopping_ul .shopping_ul_li2 .live_a.live_next:hover {
   background-position: -92px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003477}}
 .shopping_ul .shopping_ul_li3 {
   height: 67px;
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003481}}
 .shopping_ul .shopping_ul_li3 .live_bottom {
   width: 260px;
   height: 40px;
   margin: 14px 0 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003485}}
+.shopping_ul .shopping_ul_li3 .live_bottom a {
+  color: #666;
+}
 .shopping_ul .shopping_ul_li3 .live_bottom li {
   width: 55px;
   height: 40px;
@@ -745,39 +781,32 @@ img {
   float: left;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003491}}
-.shopping_ul .shopping_ul_li3 .live_bottom li a {
+.shopping_ul .shopping_ul_li3 .live_bottom li span {
   display: inline-block;
   width: 18px;
   height: 15px;
   background: url(../images/common/icons.png) no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003496}}
-.shopping_ul .shopping_ul_li3 .live_bottom li a.live_a1 {
+.shopping_ul .shopping_ul_li3 .live_bottom li span.live_a1 {
   background-position: 0 -201px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003499}}
-.shopping_ul .shopping_ul_li3 .live_bottom li a.live_a2 {
+.shopping_ul .shopping_ul_li3 .live_bottom li span.live_a2 {
   background-position: -26px -201px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003502}}
-.shopping_ul .shopping_ul_li3 .live_bottom li a.live_a3 {
+.shopping_ul .shopping_ul_li3 .live_bottom li span.live_a3 {
   background-position: -56px -201px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003510}}
 .well_chosen {
   height: 665px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003514}}
 .top_line {
   position: relative;
   width: 1000px;
   height: 60px;
   border-bottom: 2px solid #333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003519}}
 .top_line img {
   position: absolute;
   left: 50%;
@@ -787,11 +816,9 @@ img {
   bottom: -28px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003528}}
 .four_box {
   margin-top: 40px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003530}}
 .four_box a {
   display: block;
   width: 490px;
@@ -800,18 +827,161 @@ img {
   margin-right: 20px;
   margin-bottom: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003537}}
 .four_box a.right_a {
   margin-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003540}}
 .four_box a.bottom_a {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/UGoShop\/www\/src\/scss\/_index\.scss}line{font-family:\00003545}}
 .golbal_goods {
+  position: relative;
+}
+
+.golbal_goods_ul {
+  width: 1020px;
+  margin-top: 22px;
+}
+
+.golbal_li {
+  float: left;
+  width: 318px;
+  height: 460px;
+  margin: 20px 20px 0 0;
+  border: 1px solid #ddd;
+  background: #FFF;
+}
+.golbal_li:hover {
+  border: 1px solid #f70800;
+}
+
+.golbal_li_top {
+  width: 298px;
+  height: 407px;
+  padding: 10px;
+}
+.golbal_li_top a {
+  color: #000;
+}
+.golbal_li_top a .golbal_product {
+  width: 298px;
+  height: 298px;
+}
+.golbal_li_top a .golbal_p1 {
+  font-size: 15px;
+  display: block;
+  white-space: nowrap;
   overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin-top: 18px;
+}
+.golbal_li_top a .golbal_p2 {
+  font-size: 11px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  color: #f70800;
+  margin-top: 5px;
+}
+.golbal_li_top a div {
+  width: 298px;
+  height: 50px;
+  margin-top: 20px;
+}
+.golbal_li_top a div .golbal_p3 {
+  float: left;
+  font-size: 17px;
+}
+.golbal_li_top a div .golbal_p3 span {
+  font-size: 24px;
+}
+.golbal_li_top a div .golbal_p4 {
+  float: right;
+}
+.golbal_li_top a div .golbal_p4 span {
+  color: #f70800;
+}
+.golbal_li_top a div .golbal_mail {
+  display: block;
+  float: left;
+  position: relative;
+  left: 15px;
+  top: -10px;
+  background: #ff3175;
+  text-align: center;
+  color: #FFF;
+  width: 34px;
+  height: 15px;
+  line-height: 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.golbal_li_bottom {
+  width: 318px;
+  height: 32px;
+  border-top: 1px solid #ddd;
+}
+.golbal_li_bottom .golbal_p5 {
+  float: left;
+  margin: 10px 0 0 20px;
+}
+.golbal_li_bottom div {
+  width: 140px;
+  height: 20px;
+  float: right;
+  margin: 10px 15px 0 0;
+}
+.golbal_li_bottom div img {
+  display: block;
+  float: left;
+  position: relative;
+  top: 3px;
+  left: -5px;
+}
+.golbal_li_bottom div p {
+  float: left;
+}
+
+.footer {
+  background: #FFF;
+  border-top: 1px solid #e3e3e3;
+}
+
+.footer_map {
+  height: 165px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.map_out {
+  margin: 0 auto;
+}
+.map_out .map_out_li {
+  text-align: center;
+  width: 135px;
+  height: 115px;
+  float: left;
+  margin-top: 25px;
+  border-right: 1px dashed #e3e3e3;
+}
+.map_out .map_out_li .map_info {
+  margin-top: 5px;
+}
+.map_out .map_out_li .map_info li {
+  line-height: 20px;
+}
+.map_out .map_out_li .map_info .map_info1 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.map_out .map_out_li_first {
+  margin-left: 85px;
 }
 
 /*# sourceMappingURL=main.css.map */
