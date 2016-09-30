@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+.login{
+  height:$login;
+}
+.register{
+  height:$register;
+}
+.login_con{
+  @extend .error;
+  position: relative;
+}
+.login_top{
+  height:112px;
+  width:$webw;
+  .a_index,.a_login,.a_register{
+    display: block;
+    width:185px;
+    height:57px;
+    background: url(../images/common/welland.gif) no-repeat;
+    float: left;
+    margin-top: 43px;
+  }
+  .a_login{
+    width:170px;
+    background-position: 0 -58px;
+  }
+  .a_register{
+    width:170px;
+    background: url(../images/common/welreg_01.gif) no-repeat;
+  }
+  .login_top_right{
+    float: right;
+    margin-right: 30px;
+    margin-top: 80px;
+    a{
+      color: blue;
+    }
+    span{
+      color: $red;
+    }
+  }
+}
+.login_box{
+  width:964px;
+  height:374px;
+  border:2px solid $orange;
+  margin-left: 2px;
+}
+.register_box{
+  height:447px;
+}
+.register_form{
+  float: left;
+  display: block;
+  margin-top: 35px;
+}
+.register_line{
+  float: left;
+  width:964px;
+  height:45px;
+  padding:5px 0;
+  .register_first{
+     float: left;
+     display: block;
+     width:202px;
+     height:45px;
+     line-height: 45px;
+    text-align: right;
+   }
+  .identifyCode{
+    float: left;
+    width:80px;
+    height:30px;
+    margin:8px 0 0 10px;
+    background: #e3e3e3;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 30px;
+  }
+  .change_code_span{
+    float: left;
+    display: inline-block;
+    line-height: 45px;
+    margin-left: 10px;
+    a{
+      color: blue;
+    }
+  }
+  .register_prompt{
+    display: none;
+    width:385px;
+    height:35px;
+    line-height: 35px;
+    margin-top: 5px;
+    float: right;
+    margin-right: 10px;
+    border:1px solid #ffadb0;
+    background: #fff3f3;
+    color: $red;
+    padding-left:5px;
+  }
+  .item{
+    display: inline-block;
+    float: left;
+    width:329px;
+    height:15px;
+    border:1px solid #a2a2a2;
+    margin-top: 5px;
+    padding:10px;
+    font-size: 15px;
+  }
+  .register_remember{
+    position: relative;
+    top:2px;
+    left:-3px;
+  }
+  .register_agree{
+    a{
+      color: blue;
+    }
+  }
+  .item_code{
+    width:122px;
+  }
+}
+
+.login_box_left{
+  width:665px;
+  height:374px;
+  float: left;
+}
+.register_line_submit{
+  height:25px;
+  .register_submit{
+    border:none;
+    float: left;
+    display: block;
+    width:126px;
+    height:33px;
+    cursor: pointer;
+    outline: none;
+    background: url(../images/common/welreg_01.gif) no-repeat 0 -175px;
+  }
+}
+.register_line_last{
+  padding-top: 20px;
+  height:25px;
+  a{
+    color: blue;
+  }
+}
+.login_form{
+  width:360px;
+  height:220px;
+  margin:60px 0 0 130px;
+  .input{
+    width:326px;
+    height:12px;
+    padding:12px;
+  }
+  .user_name{
+    height:70px;
+
+  }
+  .user_pass{
+    height:70px;
+  }
+  .user_remember{
+    width:326px;
+    height:20px;
+    margin-top: 5px;
+    input{
+      float: left;
+    }
+    .a_forget{
+      display: inline-block;
+      float: right;
+      color: blue;
+    }
+  }
+  .txt_prompt,.pass_prompt{
+    visibility: hidden;
+    color: $red;
+  }
+  .login_submit{
+    width:351px;
+    height:37px;
+    color: #FFF;
+    line-height: 37px;
+    text-align: center;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    background: url(../images/common/welland.gif) no-repeat 0 -117px;
+  }
+}
+.login_box_right{
+  width:299px;
+  height:374px;
+  float: right;
+  background: #fff6ec;
+  p{
+    text-align: center;
+  }
+  a{
+    display: block;
+    width:142px;
+    height:32px;
+    line-height:32px;
+    margin-top: 5px;
+    text-align: center;
+    background: url(../images/common/welland.gif) no-repeat 0 -155px;
+  }
+}
+.login_right1{
+  width:150px;
+  margin: 61px 0 0 78px;
+}
+.login_right2{
+  width:150px;
+  margin: 37px 0 0 78px ;
+}
+.saoyisao {
+  position: absolute;
+  left: -140px;
+  top: 130px;
+}

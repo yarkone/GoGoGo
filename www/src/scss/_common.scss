@@ -1,0 +1,457 @@
+@charset "utf-8";
+
+.container{
+  width: 100%;
+  position: relative;
+}
+/*
+ *
+ *顶部广告
+ *
+ */
+.topad{
+  height: $topad;
+  background: #41BAE1;
+  overflow: hidden;
+  position: relative;
+  .img_a{
+    @extend .error;
+    display: block;
+    height: $topad;
+  }
+}
+/*
+ *
+ *顶部菜单
+ *
+ */
+.header {
+  height: $header;
+  border-bottom: 1px solid #ddd;
+  background: $gray;
+  overflow: hidden;
+  position: relative;
+}
+.header_con {
+  @extend .error;
+  height: $header;
+}
+.header_notice{
+  float: left;
+  width: 225px;
+  height: $header;
+  position: relative;
+  overflow: hidden;
+  .notice_img{
+    float: left;
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    @include pos(relative,10px);
+    background: url("../images/common/icons.png") no-repeat right bottom;
+  }
+  .notice_span{
+    float: left;
+    display: inline-block;
+    height: $header;
+    line-height: $header;
+    margin-left: 5px;
+  }
+  .show_notice{
+    @include pos(absolute,auto,0);
+    width: 180px;
+    height: 30px;
+    li{
+      @include ell();
+      line-height: 28px;
+      height:30px;
+      a{
+        @include link-colors();
+      }
+    }
+  }
+}
+.header_right_ul{
+  height: 16px;
+  float: right;
+  margin-top: 5px;
+  overflow: hidden;
+  li{
+    float: left;
+    border-right: 1px solid $font-color;
+    padding: 0 10px;
+    a{
+      @include link-colors();
+      img{
+        @include pos(relative,1px,5px);
+      }
+    }
+    .red_a{
+      color: $red;
+    }
+  }
+  .last{
+    border:none;
+  }
+}
+
+/*
+ *
+ *搜索部分
+ *
+ */
+.top{
+  height:$top;
+  position: relative;
+}
+.top_con {
+  @extend .error;
+  height: $top;
+  position: relative;
+}
+.top_logo{
+  float: left;
+  width: 206px;
+  height: 76px;
+  margin-top: 26px;
+  a{
+    display: block;
+    height: 76px;
+    img{
+      float: left;
+    }
+  }
+}
+.top_search_box{
+  @include pos(absolute,25%,auto,auto,50%);
+  margin-left: -208px;
+  width:416px;
+  height:32px;
+  border:2px solid $red;
+  .txt{
+    width:325px;
+    height:16px;
+    float: left;
+    border:none;
+    outline:none;
+    padding:8px;
+  }
+  .btn{
+    float: left;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    width:75px;
+    height:32px;
+    background: $red;
+    text-align: center;
+    line-height:32px;
+    color: #FFF;
+  }
+}
+.top_car{
+  float: right;
+  margin-top: 28px;
+  width:138px;
+  height:30px;
+  border:1px solid #ddd;
+  position: relative;
+  z-index: 101;
+  .car_img1{
+    //@include pos(relative,5px, auto, auto, 12px);
+    margin:5px 0 0 12px;
+    width:19px;
+    height:18px;
+    background: url(../images/common/icon2.png) no-repeat 0 -66px;
+  }
+  .car_img2{
+    @include pos(relative,-4px, auto, auto, 18px);
+    width:11px;
+    height:7px;
+    background: url(../images/common/icon2.png) no-repeat -189px -60px;
+  }
+  .car_number{
+    @include pos(absolute,-7px, 22px, auto, auto);
+    width:22px;
+    height:14px;
+    text-align: center;
+    line-height: 14px;
+    color: #FFF;
+    font-weight: bold;
+    background: url(../images/common/icon2.png) no-repeat 0 -101px;
+  }
+  .car_font{
+    @include link-colors();
+    @include pos(relative,-4px, auto, auto, 8px);
+  }
+  .car_box{
+    display: none;
+    position: absolute;
+    top:30px;
+    right:-1px;
+    width:280px;
+    height:84px;
+    border:1px solid #ddd;
+    background: #FFF;
+    z-index: 100;
+    .carlist{
+      width:280px;
+      height:84px;
+      p{
+        float: left;
+        margin:30px 70px;
+      }
+    }
+  }
+}
+
+/*
+ *
+ *底部友情链接
+ *
+ */
+.footer{
+  @extend .clearfix;
+  background: #FFF;
+  border-top: 1px solid #e3e3e3;
+}
+.footer_img{
+  @extend .error;
+}
+.footer_map{
+  @extend .error;
+  height:165px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.map_out{
+  margin:0 auto;
+  .map_out_li{
+    text-align: center;
+    width:135px;
+    height:115px;
+    float: left;
+    margin-top: 25px;
+    border-right: 1px dashed #e3e3e3;
+    .map_info{
+      margin-top: 5px;
+      li{
+        line-height: 20px;
+      }
+      .map_info1{
+        font-size: 17px;
+        margin-bottom:8px;
+      }
+    }
+  }
+  .map_out_li_first{
+    margin-left: 85px;
+  }
+  .map_out_li_last{
+    border: none;
+  }
+  .map_erweima{
+    text-align: center;
+    width:135px;
+    height:115px;
+    float: left;
+    margin-top: 25px;
+    .footer_dh{
+      margin-top: 24px;
+    }
+  }
+}
+.footer_link{
+  @extend .error;
+  height:220px;
+}
+.footer_list{
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.copyright{
+  text-align: center;
+  line-height: 25px;
+  color: $font-color;
+}
+.sidebar{
+  width:36px;
+  height:100%;
+  position: fixed;
+  right:0;
+  top:0;
+  z-index: 1000;
+  border-right: 4px solid #222;
+}
+.bar_top{
+  width:36px;
+  height:144px;
+  position: absolute;
+  right:-4px;
+  top:50%;
+  margin-top: -72px;
+  li{
+    position: relative;
+    width:36px;
+    height:36px;
+    .ab{
+      position: relative;
+      display: block;
+      width:36px;
+      height:36px;
+      background: url(../images/common/right_bar.png) no-repeat;
+      cursor: pointer;
+      z-index: 2;
+    }
+    .hover_out{
+      position: absolute;
+      display: none;
+      width:90px;
+      height:36px;
+      line-height: 36px;
+      text-align: center;
+      left:-83px;
+      top:0;
+      background: url(../images/common/right_bar.png) no-repeat 0 -412px;
+      a{
+        display: inline-block;
+        width:90px;
+        height:36px;
+        color: #FFF;
+      }
+    }
+    .cart_con{
+      background-position: 0 -46px;
+    }
+    .care_con{
+      background-position: 0 -92px;
+    }
+    .listen_con{
+      background-position: 0 -138px;
+    }
+    .hover{
+      background-position-x : -46px;
+    }
+    .user_box{
+      display: none;
+      position: absolute;
+      left:-258px;
+      top:0;
+      width:258px;
+      height:228px;
+      background: #FFF;
+      border:1px solid #ddd;
+      .user_head{
+        margin-top: 30px;
+        margin-left:90px;
+      }
+      .user_name{
+        margin-top: 10px;
+        text-align: center;
+        a{
+          color: $red;
+        }
+      }
+      .user_bottom{
+        position: absolute;
+        bottom:0;
+        height:62px;
+        width:258px;
+        background: #f8f8f8;
+        a{
+          display: block;
+          width:88px;
+          height:28px;
+          border:1px solid #ddd;
+          @include border-radius(3px);
+          float: left;
+          margin:15px 25px;
+          text-align: center;
+          line-height: 28px;
+        }
+        .user_bottom_a2{
+          margin-left: 0;
+        }
+      }
+      .user_close{
+        position: absolute;
+        right:12px;
+        top:15px;
+        width:11px;
+        height:11px;
+        background: url(../images/common/right_bar.png) no-repeat -69px -356px;
+      }
+    }
+  }
+}
+.bar_bot{
+  width:36px;
+  height:108px;
+  position: absolute;
+  bottom:-1px;
+  right:-4px;
+  li{
+    width:36px;
+    height:36px;
+    position: relative;
+  }
+  .ab{
+    position: relative;
+    display: block;
+    width:36px;
+    height:36px;
+    background: url(../images/common/right_bar.png) no-repeat;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .hover_out{
+    position: absolute;
+    display: none;
+    width:90px;
+    height:36px;
+    line-height: 36px;
+    text-align: center;
+    left:-83px;
+    top:0;
+    background: url(../images/common/right_bar.png) no-repeat 0 -412px;
+    a{
+      display: inline-block;
+      width:90px;
+      height:36px;
+      color: #FFF;
+    }
+  }
+  .code_con{
+    background-position: 0 -184px;
+  }
+  .ask_con{
+    background-position: 0 -230px;
+  }
+  .return_con{
+    background-position: 0 -276px;
+  }
+  .hover{
+    background-position-x : -46px;
+  }
+  .code_box{
+    display: none;
+    position: absolute;
+    top:-76px;
+    left:-129px;
+    width: 128px;
+    height:178px;
+    background: #FFF;
+    border:1px solid #ddd;
+    text-align: center;
+    img{
+      margin-top: 15px;
+      margin-bottom: 12px;
+    }
+    span{
+      line-height: 17px;
+    }
+    .code_span{
+      color: $red;
+    }
+  }
+}

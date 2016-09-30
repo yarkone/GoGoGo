@@ -1,194 +1,5 @@
 @charset "utf-8";
 
-.container{
-  width: 100%;
-  position: relative;
-}
-.topad{
-  height: $topad;
-  background: #41BAE1;
-  overflow: hidden;
-  position: relative;
-  .img_a{
-    @extend .error;
-    display: block;
-    height: $topad;
-  }
-}
-.header {
-  height: $header;
-  border-bottom: 1px solid #ddd;
-  background: $gray;
-  overflow: hidden;
-  position: relative;
-}
-.header_con {
-  @extend .error;
-  height: $header;
-}
-.header_notice{
-  float: left;
-  width: 225px;
-  height: $header;
-  position: relative;
-  overflow: hidden;
-  .notice_img{
-    float: left;
-    display: inline-block;
-    width: 12px;
-    height: 10px;
-    @include pos(relative,10px);
-    background: url("../images/common/icons.png") no-repeat right bottom;
-  }
-  .notice_span{
-    float: left;
-    display: inline-block;
-    height: $header;
-    line-height: $header;
-    margin-left: 5px;
-  }
-  .show_notice{
-    @include pos(absolute,auto,0);
-    width: 180px;
-    height: 30px;
-    li{
-      @include ell();
-      line-height: 28px;
-      height:30px;
-      a{
-        @include link-colors();
-      }
-    }
-  }
-}
-.header_right_ul{
-  height: 16px;
-  float: right;
-  margin-top: 5px;
-  overflow: hidden;
-  li{
-    float: left;
-    border-right: 1px solid $font-color;
-    padding: 0 10px;
-    a{
-      @include link-colors();
-      img{
-        @include pos(relative,1px,5px);
-      }
-    }
-    .red_a{
-      color: $red;
-    }
-  }
-  .last{
-    border:none;
-  }
-}
-.top{
-  height:$top;
-  position: relative;
-  background: #FFF;
-}
-.top_con {
-  @extend .error;
-  height: $top;
-  position: relative;
-}
-.top_logo{
-  float: left;
-  width: 206px;
-  height: 76px;
-  margin-top: 26px;
-  a{
-    display: block;
-    height: 76px;
-    img{
-      float: left;
-    }
-  }
-}
-.top_search_box{
-  @include pos(absolute,25%,auto,auto,50%);
-  margin-left: -208px;
-  width:416px;
-  height:32px;
-  border:2px solid $red;
-  .txt{
-    width:325px;
-    height:16px;
-    float: left;
-    border:none;
-    outline:none;
-    padding:8px;
-  }
-  .btn{
-    float: left;
-    border:none;
-    outline:none;
-    cursor: pointer;
-    width:75px;
-    height:32px;
-    background: $red;
-    text-align: center;
-    line-height:32px;
-    color: #FFF;
-  }
-}
-.top_car{
-  float: right;
-  margin-top: 28px;
-  width:138px;
-  height:30px;
-  border:1px solid #ddd;
-  position: relative;
-  z-index: 101;
-  .car_img1{
-    //@include pos(relative,5px, auto, auto, 12px);
-    margin:5px 0 0 12px;
-    width:19px;
-    height:18px;
-    background: url(../images/common/icon2.png) no-repeat 0 -66px;
-  }
-  .car_img2{
-    @include pos(relative,-4px, auto, auto, 18px);
-    width:11px;
-    height:7px;
-    background: url(../images/common/icon2.png) no-repeat -189px -60px;
-  }
-  .car_number{
-    @include pos(absolute,-7px, 22px, auto, auto);
-    width:22px;
-    height:14px;
-    text-align: center;
-    line-height: 14px;
-    color: #FFF;
-    font-weight: bold;
-    background: url(../images/common/icon2.png) no-repeat 0 -101px;
-  }
-  .car_font{
-    @include link-colors();
-    @include pos(relative,-4px, auto, auto, 8px);
-  }
-  .car_box{
-    display: none;
-    position: absolute;
-    top:30px;
-    right:-1px;
-    width:280px;
-    height:84px;
-    border:1px solid #ddd;
-    background: #FFF;
-    z-index: 100;
-    .carlist{
-      width:280px;
-      height:84px;
-      p{
-        float: left;
-        margin:30px 70px;
-      }
-    }
-  }
-}
 .nav{
   height:$nav;
   background: $red;
@@ -336,10 +147,10 @@
 }
 
 .content{
-  width:$webw;
-  margin:0 auto;
+  width:100%;
   @extend .clearfix;
   padding-bottom: 30px;
+  background: $gray;
 }
 .content_con{
   @extend .error;
@@ -494,6 +305,7 @@
   height:$content_choice - 2;
   background: #FFF;
   border:1px solid $gray_border;
+  overflow: hidden;
 }
 .shopping_top{
   width:290px;
@@ -524,6 +336,7 @@
   .shopping_ul_li1{
     @extend .li;
     height: 150px;
+    overflow: hidden;
     dt{
       width:115px;
       height:115px;
@@ -782,42 +595,5 @@
     p{
       float: left;
     }
-  }
-}
-.footer{
-  @extend .clearfix;
-  background: #FFF;
-  border-top: 1px solid #e3e3e3;
-}
-.footer_img{
-  @extend .error;
-}
-.footer_map{
-  @extend .error;
-  height:165px;
-  border-bottom: 1px solid #e3e3e3;
-}
-.map_out{
-  margin:0 auto;
-  .map_out_li{
-    text-align: center;
-    width:135px;
-    height:115px;
-    float: left;
-    margin-top: 25px;
-    border-right: 1px dashed #e3e3e3;
-    .map_info{
-      margin-top: 5px;
-      li{
-        line-height: 20px;
-      }
-      .map_info1{
-        font-size: 15px;
-        margin-bottom:5px;
-      }
-    }
-  }
-  .map_out_li_first{
-    margin-left: 85px;
   }
 }
