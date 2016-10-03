@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>商品列表页</title>
+        <link type="text/css" rel="stylesheet" href="../css/main_productList.css" />
+        <script type="text/javascript" src="../javascript/lib/jquery-1.8.3.js"></script>
+        <script type="text/javascript" src="../javascript/cookie.js"></script>
+        <script type="text/javascript" src="../javascript/common.js"></script>
+    </head>
+    <body>
+        <div id="container" class="container">
+            <div class="header">
+                <div class="header_con">
+                    <div class="header_notice">
+                        <span class="notice_img"></span><span class="notice_span">公告</span>
+                        <ul id="show_notice" class="show_notice">
+                            <li><a href="#">【注意】自主语音订购说明</a></li>
+                            <li><a href="#">【紧急通知】关于短信发送异常的通知</a></li>
+                            <li><a href="#">【公告】防诈骗提醒</a></li>
+                        </ul>
+                    </div>
+                    <ul class="header_right_ul">
+                        <li><a href="#">注册</a></li>
+                        <li><a href="#">登录</a></li>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">物流查询</a></li>
+                        <li><a href="#">我的关注</a></li>
+                        <li><a href="#" class="red_a">资讯</a></li>
+                        <li><a href="#">品牌馆</a></li>
+                        <li class="last"><a href="#"><img src="../images/common/phone.png" alt="" />手机优品惠</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="top" class="top">
+                <div id="top_con" class="top_con">
+                    <div class="top_logo">
+                        <a href="index.html"><img src="../images/common/logo.png" alt="" /><img src="../images/common/logom.jpg" alt="" /></a>
+                    </div>
+                    <div class="top_search_box">
+                        <input type="text" placeholder="请输入商品名称或货号" id="tags" class="txt" />
+                        <input type="button" class="btn" value="搜索"/>
+                    </div>
+                    <ul class="top_index">
+                        <li><a href="#">双立人</a></li>
+                        <li><a href="#">品牌厨具</a></li>
+                        <li><a href="#">惠人</a></li>
+                        <li><a href="#">海参</a></li>
+                        <li><a href="#">韩束</a></li>
+                    </ul>
+                    <div class="top_car" id="top_car">
+                        <img src="../images/common/icon2.png" alt="" class="car_img1"/>
+                        <a href="car.html" class="car_font">我的购物车</a>
+                        <span class="car_number">0</span>
+                        <img src="../images/common/icon2.png" alt="" class="car_img2"/>
+                        <div class="car_box" id="car_box">
+                            <div class="carlist">
+                                <p>购物车还没有商品，快去挑选吧~</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="nav" class="nav">
+                <div id="nav_con" class="nav_con">
+                    <ul class="nav_ul">
+                        <li class="nav_first_li"><a href="../index.html">首页</a></li>
+                        <li><a href="index.html"><img src="../images/index/video.png" alt="" />视频</a></li>
+                        <li><a href="index.html">食品</a></li>
+                        <li><a href="index.html">家居</a></li>
+                        <li><a href="index.html">美妆</a></li>
+                        <li><a href="index.html">服饰</a></li>
+                        <li><a href="index.html">海外购</a></li>
+                    </ul>
+                    <div class="nav_classify" id="nav_classify"></div>
+                    <div id="nav_hover" class="nav_hover">
+                        <ul class="nav_out">
+                            <li class="nav_out_li">
+                                <div class="out_top">
+                                    <img src="../images/index/hover_li1.jpg" alt="" />
+                                    <h2>品质厨房</h2>
+                                </div>
+                                <ul class="nav_info">
+                                    <li><a href="#">电视热销</a></li>
+                                    <li><a href="#">品质厨具</a></li>
+                                    <li><a href="#">厨房电器</a></li>
+                                    <li><a href="#">厨房用具</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_out_li">
+                                <div class="out_top">
+                                    <img src="../images/index/hover_li2.jpg" alt="" />
+                                    <h2>美食•民生</h2>
+                                </div>
+                                <ul class="nav_info">
+                                    <li><a href="#">电视热销</a></li>
+                                    <li><a href="#">进口食品</a></li>
+                                    <li><a href="#">营养保健</a></li>
+                                    <li><a href="#">特产零食</a></li>
+                                    <li><a href="#">粮油干货</a></li>
+                                    <li><a href="#">就睡茶饮</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_out_li">
+                                <div class="out_top">
+                                    <img src="../images/index/hover_li3.jpg" alt="" />
+                                    <h2>健康生活</h2>
+                                </div>
+                                <ul class="nav_info">
+                                    <li><a href="#">电视热销</a></li>
+                                    <li><a href="#">服装内衣</a></li>
+                                    <li><a href="#">鞋包服饰</a></li>
+                                    <li><a href="#">旅游户外</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_out_li">
+                                <div class="out_top">
+                                    <img src="../images/index/hover_li4.jpg" alt="" />
+                                    <h2>美丽穿戴</h2>
+                                </div>
+                                <ul class="nav_info">
+                                    <li><a href="#">珍珠财宝</a></li>
+                                    <li><a href="#">营养保健</a></li>
+                                    <li><a href="#">翡翠玉石</a></li>
+                                    <li><a href="#">天然木饰</a></li>
+                                    <li><a href="#">文化收藏</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_out_li">
+                                <div class="out_top">
+                                    <img src="../images/index/hover_li5.jpg" alt="" />
+                                    <h2>珠宝收藏</h2>
+                                </div>
+                                <ul class="nav_info">
+                                    <li><a href="#">美肤靓装</a></li>
+                                    <li><a href="#">品牌护肤</a></li>
+                                    <li><a href="#">洗护狐狸</a></li>
+                                    <li><a href="#">彩妆香水</a></li>
+                                    <li><a href="#">美容仪器</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_out_li nav_out_li_last">
+                                <div class="out_top">
+                                    <img src="../images/index/hover_li6.jpg" alt="" />
+                                    <h2>美肤靓装</h2>
+                                </div>
+                                <ul class="nav_info">
+                                    <li><a href="#">进口食品</a></li>
+                                    <li><a href="#">营养保健</a></li>
+                                    <li><a href="#">特产零食</a></li>
+                                    <li><a href="#">粮油干货</a></li>
+                                    <li><a href="#">就睡茶饮</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div id="content" class="content">
+                <div class="content_banner"><img src="../images/productList/content_banner.jpg" alt="" /></div>
+                <div class="content_classify">
+                    <div class="classify_result">
+                        <img src="../images/productList/result.jpg" alt="" />
+                        <span>
+                           在全部商品中搜索“<span>品牌厨具</span>”找到67件相关商品
+                        </span>
+                    </div>
+                    <ul class="classify_brand classify_ul">
+                        <li>品牌：</li>
+                        <li class="classify_all">全部</li>
+                        <li>爱仕达</li>
+                        <li>康宁</li>
+                        <li>双立人</li>
+                        <li>FISSLER</li>
+                        <li>康宁VISIONS</li>
+                        <li class="spread">
+                            <a href="javascript:void(0)"></a><span>|</span>展开
+                        </li>
+                    </ul>
+                    <ul class="classify_price classify_ul">
+                        <li>价格：</li>
+                        <li class="classify_all">全部</li>
+                        <li>0-100</li>
+                        <li>100-200</li>
+                        <li>200-300</li>
+                        <li>300-500</li>
+                        <li>500-1000</li>
+                        <li class="spread">
+                            <a href="javascript:void(0)"></a><span>|</span>展开
+                        </li>
+                    </ul>
+                </div>
+                <div class="content_search">
+                    <ul class="content_search_ul">
+                        <li>快速查找</li>
+                        <li class="content_search_li2"><a href="javascript:void(0)">相关度</a></li>
+                        <li><a href="javascript:void(0)">销量</a></li>
+                        <li><a href="javascript:void(0)">上架时间</a></li>
+                        <li><a href="javascript:void(0)">价格<img src="../images/productList/price_up_down.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <ul class="content_list">
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro1.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人TWINNova中式炒锅尊享装</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>14</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro2.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro3.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro4.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro5.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro6.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro7.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro7.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro8.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro9.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro10.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro11.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro12.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro13.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro14.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro15.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro16.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro17.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro18.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro19.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="content_pro">
+                        <div class="content_pro_img">
+                            <img src="../images/productList/pro20.jpg" alt="" />
+                        </div>
+                        <div class="content_pro_del">
+                            <p class="content_pro_del1">双立人优享生活厨具优购物特供组</p>
+                            <div class="content_pro_del2">
+                                <p class="del_left"><span>5.7</span>折</p>
+                                <div class="del_middle">
+                                    <span><s>￥5032</s></span>
+                                    <span class="del_price">￥2888</span>
+                                </div>
+                                <p class="del_right">评论<span>17</span>条</p>
+                            </div>
+                        </div>
+                        <div class="content_pro_tag">
+                            <div class="content_pro_tag1">
+                                <p class="pro_tag_red">TV商品</p>
+                                <p class="pro_tag_blue">免运费</p>
+                            </div>
+                            <div class="content_pro_tag2">
+                                <p><span>积</span>2,888</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="activity" class="activity">
+                <div class="activity_line"></div>
+                <h2>您可能喜欢的活动</h2>
+                <ul class="activity_ul">
+                    <li><a href="#" class="activity1"></a></li>
+                    <li><a href="#" class="activity2"></a></li>
+                    <li><a href="#" class="activity3"></a></li>
+                </ul>
+            </div>
+            <div class="footer">
+                <div class="footer_img"><img src="../images/common/footer_ad.jpg" alt="" /></div>
+                <div class="footer_map">
+                    <ul class="map_out">
+                        <li class="map_out_li map_out_li_first">
+                            <ul class="map_info">
+                                <li class="map_info1">新手上路</li>
+                                <li>新用户注册</li>
+                                <li>忘记密码</li>
+                                <li>购物流程</li>
+                            </ul>
+                        </li>
+                        <li class="map_out_li">
+                            <ul class="map_info">
+                                <li class="map_info1">支付配送</li>
+                                <li>货到付款</li>
+                                <li>支付宝</li>
+                                <li>配送方式</li>
+                            </ul>
+                        </li>
+                        <li class="map_out_li">
+                            <ul class="map_info">
+                                <li class="map_info1">会员服务</li>
+                                <li>服务承诺</li>
+                                <li>会员制度</li>
+                                <li>积分介绍</li>
+                                <li>退换货原则</li>
+                            </ul>
+                        </li>
+                        <li class="map_out_li map_out_li_last">
+                            <ul class="map_info">
+                                <li class="map_info1">关于优品惠</li>
+                                <li>企业介绍</li>
+                                <li>联系我们</li>
+                                <li>招商专区</li>
+                            </ul>
+                        </li>
+                        <li class="map_erweima">
+                            <img src="../images/common/erweima.jpg" alt="" /><br />
+                            <span>手机优品惠</span><br />
+                            <span>（优购物）</span>
+                        </li>
+                        <li class="map_erweima">
+                            <img src="../images/common/footer_dh.jpg" alt="" class="footer_dh" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_link">
+                    <p class="footer_list">
+                        <a target="_blank" href="#">首页</a>
+                        |
+                        <a target="_blank" href="#">关于优品惠</a>
+                        |
+                        <a target="_blank" href="#">优购物</a>
+                        |
+                        <a target="_blank" href="#">联系我们</a>
+                        |
+                        <a target="_blank" href="#">招贤纳士</a>
+                        |
+                        <a target="_blank" href="#">招商专区</a>
+                        |
+                        <a target="_blank" href="#">供应商入口</a>
+                        |
+                        <a target="_blank" href="#">友情链接</a>
+                        |
+                        <a target="_blank" href="#">网站地图</a>
+                        |
+                        <a target="_blank" href="#">资讯中心</a>
+                        |
+                        <a target="_blank" href="#">评论</a>
+                        |
+                        <a target="_blank" href="#"> 图片</a>
+                    </p>
+                    <p class="copyright">优品惠（优购物）全球优品特卖网站 专属于千万女性的优品特卖网站,优品惠（优购物）电视购物官方网站,100%正品保证 支持货到付款.</p>
+                    <p class="copyright">Copyright©2007-2015 北京优购文化发展有限公司版权所有 京ICP备14018505号 食品流通许可证编号SP1103021310006741(1-1)</p>
+                    <p class="copyright"> 公司地址:北京市经济技术开发区同济南路19号 服务热线：400-707-0707</p>
+                </div>
+            </div>
+            <div id="sidebar" class="sidebar">
+                <ul class="bar_top">
+                    <li class="user">
+                        <a class="ab user_con"></a>
+                        <div class="user_box">
+                            <div class="user_head">
+                                <a href="#"><img src="../images/common/user_head.jpg" alt="" /></a>
+                            </div>
+                            <p class="user_name">
+                                你好！请 <a href="#">登陆</a> | <a href="#">注册</a>
+                            </p>
+                            <div class="user_bottom">
+                                <a href="#">我的订单</a>
+                                <a href="#"class="user_bottom_a2">优惠券</a>
+                            </div>
+                            <div class="user_close"></div>
+                        </div>
+                    </li>
+                    <li class="cart">
+                        <a class="ab cart_con"></a>
+                        <div class="hover_out"><a href="#">购物车</a></div>
+                    </li>
+                    <li class="care">
+                        <a class="ab care_con"></a>
+                        <div class="hover_out"><a href="#">我的关注</a></div>
+                    </li>
+                    <li class="listen">
+                        <a class="ab listen_con"></a>
+                        <div class="hover_out"><a href="#">我的客服</a></div>
+                    </li>
+                </ul>
+                <ul class="bar_bot">
+                    <li class="code">
+                        <a class="ab code_con"></a>
+                        <div class="code_box">
+                            <img src="../images/common/code.jpg" alt="" /><br/>
+                            <span>下载手机优品惠</span><br/>
+                            <span class="code_span">随时随地享低价</span>
+                        </div>
+                    </li>
+                    <li class="ask">
+                        <a class="ab ask_con"></a>
+                        <div class="hover_out"><a href="#">问卷调查</a></div>
+                    </li>
+                    <li class="return">
+                        <a class="ab return_con"></a>
+                        <div class="hover_out"><a href="#">回到顶部</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
+<script type="text/javascript" src="../javascript/register.js"></script>
+<script type="text/javascript" src="../javascript/common_con.js"></script>

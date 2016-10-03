@@ -94,117 +94,97 @@
     border:none;
   }
 }
-
-/*
- *
- *搜索部分
- *
- */
-.top{
-  height:$top;
+.nav{
+  height:$nav;
+  background: $red;
   position: relative;
 }
-.top_con {
+.nav_con{
   @extend .error;
-  height: $top;
+  height: $nav;
   position: relative;
 }
-.top_logo{
+.nav_hover{
+  display: none;
+  width:998px;
+  height:246px;
+  background: #FFF;
+  position: absolute;
+  top:$nav;
+  z-index: 20;
+  border:1px solid $red;
+}
+.nav_out{
+  width:998px;
+  height:246px;
+}
+.nav_out_li{
+  width:165px;
+  height:246px;
   float: left;
-  width: 206px;
-  height: 76px;
-  margin-top: 26px;
-  a{
-    display: block;
-    height: 76px;
+  border-right: 1px solid #ededed;
+  .out_top{
+    width:135px;
+    height:55px;
+    margin:0 auto;
+    border-bottom: 1px dashed #ededed;
     img{
       float: left;
+      display: block;
+      margin-top: 24px;
+      margin-left: 10px;
+    }
+    h2{
+      float: left;
+      margin-top: 20px;
+      margin-left: 5px;
     }
   }
-}
-.top_search_box{
-  @include pos(absolute,25%,auto,auto,50%);
-  margin-left: -208px;
-  width:416px;
-  height:32px;
-  border:2px solid $red;
-  .txt{
-    width:325px;
-    height:16px;
-    float: left;
-    border:none;
-    outline:none;
-    padding:8px;
-  }
-  .btn{
-    float: left;
-    border:none;
-    outline:none;
-    cursor: pointer;
-    width:75px;
-    height:32px;
-    background: $red;
-    text-align: center;
-    line-height:32px;
-    color: #FFF;
-  }
-}
-.top_car{
-  float: right;
-  margin-top: 28px;
-  width:138px;
-  height:30px;
-  border:1px solid #ddd;
-  position: relative;
-  z-index: 101;
-  .car_img1{
-    //@include pos(relative,5px, auto, auto, 12px);
-    margin:5px 0 0 12px;
-    width:19px;
-    height:18px;
-    background: url(../images/common/icon2.png) no-repeat 0 -66px;
-  }
-  .car_img2{
-    @include pos(relative,-4px, auto, auto, 18px);
-    width:11px;
-    height:7px;
-    background: url(../images/common/icon2.png) no-repeat -189px -60px;
-  }
-  .car_number{
-    @include pos(absolute,-7px, 22px, auto, auto);
-    width:22px;
-    height:14px;
-    text-align: center;
-    line-height: 14px;
-    color: #FFF;
-    font-weight: bold;
-    background: url(../images/common/icon2.png) no-repeat 0 -101px;
-  }
-  .car_font{
-    @include link-colors();
-    @include pos(relative,-4px, auto, auto, 8px);
-  }
-  .car_box{
-    display: none;
-    position: absolute;
-    top:30px;
-    right:-1px;
-    width:280px;
-    height:84px;
-    border:1px solid #ddd;
-    background: #FFF;
-    z-index: 100;
-    .carlist{
-      width:280px;
-      height:84px;
-      p{
-        float: left;
-        margin:30px 70px;
+  .nav_info{
+    margin:0 auto;
+    width:135px;
+    @extend .clearfix;
+    li{
+      text-align: center;
+      line-height: 30px;
+      a{
+        color: $font-color;
       }
     }
   }
 }
+.nav_out_li_last{
+  border:none;
+}
+.nav_ul{
+  float: left;
+  overflow: hidden;
+  li{
+    float: left;
+    a{
+      display: inline-block;
+      height:$nav;
+      line-height: $nav;
+      padding:0 20px;
+      color: #FFF;
+      font-size: 15px;
+      font-weight: 700;
+      img{
+        @include pos(relative,3px, auto, auto, -1px);
+      }
+    }
+  }
+  .nav_first_li{
+    background: #bc0600;
+  }
+}
+.nav_classify{
+  width:134px;
+  height:$nav;
+  float: right;
+  background: url(../images/index/searchbar.jpg) no-repeat 0 -65px;
 
+}
 /*
  *
  *底部友情链接

@@ -5,7 +5,10 @@
         <title>优品惠(优购物)女王专属购物网站_精选超市_视频直播-优品惠(优购物)电视购物官方网站</title>
         <link type="text/css" rel="stylesheet" href="css/main.css" />
         <script type="text/javascript" src="javascript/lib/jquery-1.8.3.js"></script>
+        <link rel="stylesheet" href="javascript/lib/jquery-ui-1.12.1.custom/jquery-ui.css">
+        <script type="text/javascript" src="../javascript/cookie.js"></script>
         <script type="text/javascript" src="javascript/common.js"></script>
+        <script src="javascript/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
     </head>
     <body>
         <div id="container" class="container">
@@ -40,8 +43,8 @@
                         <a href="index.html"><img src="images/common/logo.png" alt="" /><img src="images/common/logom.jpg" alt="" /></a>
                     </div>
                     <div class="top_search_box">
-                        <input type="text" placeholder="请输入商品名称或货号" class="txt" />
-                        <input type="button" class="btn" value="搜索" />
+                        <input type="text" placeholder="请输入商品名称或货号" id="tags" class="txt" />
+                        <input type="button" class="btn" value="搜索"/>
                     </div>
                     <div class="top_car" id="top_car">
                         <img src="images/common/icon2.png" alt="" class="car_img1"/>

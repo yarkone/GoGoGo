@@ -1,11 +1,10 @@
 @charset "UTF-8";
-@mixin link-colors($normal : #666, $hover : #F90800, $visited : #666) {
+@mixin link-colors($normal : #666, $hover : #F90800) {
   color: $normal;
   &:hover {
     color: $hover;
     text-decoration: underline;
   }
-  &:visited { color: $visited; }
 }
 /* 圆角 */
 @mixin border-radius($radius) {
