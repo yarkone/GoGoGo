@@ -172,16 +172,18 @@
                 </ul>
                 <div class="content_productBox">
                     <div class="product_left">
-                        <ul class="product_bigImg">
-                            <li class="bigImg1"><img src="../images/productDetail/bigImg1.jpg" alt="" /></li>
-                            <li class="bigImg2"><img src="../images/productDetail/bigImg2.jpg" alt="" /></li>
-                            <li class="bigImg3"><img src="../images/productDetail/bigImg3.jpg" alt="" /></li>
-                            <li class="bigImg4"><img src="../images/productDetail/bigImg4.jpg" alt="" /></li>
-                        </ul>
+                        <div class="product_big">
+                            <div class="product_move"></div>
+                            <ul class="product_bigImg">
+                                <li class="bigImg1"><img src="../images/productDetail/bigImg1.jpg" alt="" /></li>
+                                <li class="bigImg2"><img src="../images/productDetail/bigImg2.jpg" alt="" /></li>
+                                <li class="bigImg3"><img src="../images/productDetail/bigImg3.jpg" alt="" /></li>
+                                <li class="bigImg4"><img src="../images/productDetail/bigImg4.jpg" alt="" /></li>
+                            </ul>
+                        </div>
                         <div class="product_smallImg_box">
                             <a href="javascript:void(0)" class="img_prev"></a>
                             <ul class="product_smallImg">
-                                <div id="product_move"></div> 
                                 <li class="smallImg1"><img src="../images/productDetail/bigImg1.jpg" alt="" /></li>
                                 <li class="smallImg2"><img src="../images/productDetail/bigImg2.jpg" alt="" /></li>
                                 <li class="smallImg3"><img src="../images/productDetail/bigImg3.jpg" alt="" /></li>
@@ -189,12 +191,63 @@
                             </ul>
                             <a href="javascript:void(0)" class="img_next"></a>
                         </div>
+                        <div class="smallImg_bottom">
+                            <a href="#" class="smallImg_bottom_left"><img src="../images/productDetail/star.jpg" alt="" />加入收藏</a>
+                            <a href="#" class="smallImg_bottom_right">更多</a>
+                        </div>
                         <div class="product_blowUp">
-                            <img src="" alt="" />
+                            <img src="" alt="" class="largeImg"/>
                         </div>
                     </div>
                     <div class="product_right">
-
+                        <div class="right_top">
+                            <span class="right_top_left">品牌： <a href="#">双立人</a></span>
+                            <span class="right_top_right">商品货号：<span>360911_001</span></span>
+                        </div>
+                        <div class="product_text">
+                            <div class="product_name">
+                                双立人TWINNova中式炒锅尊享装<br/>[再送全套刀具+锅铲，手机下单再减]
+                            </div>
+                            <ul class="product_ul">
+                                <li class="product_price">
+                                    <span><s>￥7550</s></span>
+                                    <span class="right_span">免运费</span>
+                                </li>
+                                <li class="preferential_price ">
+                                    <p>优品惠价： <span>￥1998</span></p>
+                                    <a href="#">已有 <span>（14）</span>人评价</a>
+                                </li>
+                                <li class="product_address product_items">
+                                    <span class="first_span">送至</span>
+                                    <div class="goods_div">北京北京东城区 <img src="../images/productDetail/img_down.jpg" alt=""/></div>
+                                    <p class="goods_p"><span>有货</span>，下单后可立即发货。</p>
+                                </li>
+                                <li class="product_norms product_items">
+                                    <span class="first_span">规格</span>
+                                    <div class="goods_div">共同/共同</div>
+                                </li>
+                                <li class="product_color product_items">
+                                    <span class="first_span">颜色</span>
+                                    <div class="goods_div">不锈钢色/红色</div>
+                                </li>
+                                <li class="product_items">
+                                    <span class="first_span">数量</span>
+                                    <div class="num_change">
+                                        <input type="button" class="decrease" value="-"/>
+                                        <input type="text" value=1 class="product_number" />
+                                        <input type="button" class="add" value="+"/>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="product_btn">
+                                <button class="product_buy"><img src="../images/common/buy.png" alt=""/>立即购买</button>
+                                <button class="product_addCar"><img src="../images/common/car.png" alt=""/>加入购物车</button>
+                            </div>
+                            <div class="product_contact">
+                                <h1>400-707-0707</h1>
+                                <span>老会员按9键 语音订购再减10元</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -329,5 +382,5 @@
         </div>
     </body>
 </html>
-<script type="text/javascript" src="../javascript/register.js"></script>
+<script type="text/javascript" src="../javascript/productDetail.js"></script>
 <script type="text/javascript" src="../javascript/common_con.js"></script>

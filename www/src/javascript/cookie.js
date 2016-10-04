@@ -6,6 +6,9 @@
         // 获取单值cookie
         this.get = function(name) {
             var start = document.cookie.indexOf(encodeURIComponent(name)) ;
+            if( start == -1 ) {
+                return undefined;
+            }
             var end = document.cookie.indexOf(';', start) ;
             if(end == -1) {
                 end = document.cookie.length;
