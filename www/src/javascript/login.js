@@ -8,6 +8,7 @@ $(function() {
      */
     $(".input_name").bind("blur",isUserName);
     $(".input_pass").bind("blur",isPassword);
+    $(".input").val("");
     function isUserName(){
         var regPhone = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
         var regEmail = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
@@ -47,10 +48,30 @@ $(function() {
         var userPassword = $.cookie.getSub($(".input_name").val(),"uPwd");
 
         if(userName == undefined){
-            alert("该手机号或邮箱未注册！请前往注册！");
+            $(".frameBox").css("display","block");
+            $(".message2").text($(".input_name").val());
+            $(".frame1").css("display","block");
+            $(".go_login").click(function(){
+                location.href = "register.html";
+            });
         } else{
             if($(".input_pass").val() == userPassword) {
-                alert("登陆成功！即将跳转到首页！")
+                $(".frameBox").css("display","block");
+                $(".message2").text($(".input_name").val());
+                $(".frame2").css("display","block");
+                $.cookie.setAll("currentUser",{"uName":$(".input_name").val(),"uPwd":$(".input_pass").val()},undefined,"/UGoShop/");
+                setTimeout(function(){
+                    var i = 3;
+                    setInterval(function(){
+                        i = i - 1;
+                        $(".go_login span").text(i);
+                    },1000);
+                    location.href = "../index.html";
+                },3000);
+            } else {
+                $(".input_pass").val("")
+                    .siblings().last()
+                    .css("visibility","visible").html("密码错误！");
             }
         }
     });

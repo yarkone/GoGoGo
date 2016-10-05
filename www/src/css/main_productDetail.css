@@ -247,6 +247,9 @@ img {
   font-size: 15px;
   font-weight: 700;
 }
+.nav_ul li a:hover {
+  background: #e20700;
+}
 .nav_ul li a img {
   position: relative;
   top: 3px;
@@ -909,8 +912,8 @@ img {
   left: 0;
   top: 0;
   display: block;
-  width: 850px;
-  height: 850px;
+  width: 900px;
+  height: 900px;
 }
 
 .product_right {
@@ -1020,10 +1023,15 @@ img {
   border: 1px solid #ccc;
   text-align: center;
   line-height: 18px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 .product_items .goods_div img {
   position: relative;
   top: -3px;
+}
+.product_items .goods_div_default {
+  border: 1px solid #f70800;
 }
 .product_items .goods_p {
   float: left;
@@ -1049,10 +1057,12 @@ img {
 .product_items .num_change .decrease {
   border-right: 1px solid #ccc;
   width: 24px;
+  cursor: pointer;
 }
 .product_items .num_change .add {
   border-left: 1px solid #ccc;
   width: 24px;
+  cursor: pointer;
 }
 .product_items .product_number {
   width: 46px;

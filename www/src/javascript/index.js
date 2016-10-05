@@ -2,7 +2,6 @@
  * Created by my on 2016/9/28.
  */
 $(function() {
-
     /**
      *  搜索
      *
@@ -35,7 +34,16 @@ $(function() {
     $( "#tags" ).autocomplete({
         source: availableTags
     });
+    /**
+     *  jqueryUI插件实现搜索实时显示
+     *
+     */
 
+    $(".btn").on("click",function(){
+        if($(".txt").val() == "品牌厨具"){
+            location.href = "html/product_list.html";
+        }
+    });
 
     /**
      * banner图轮播

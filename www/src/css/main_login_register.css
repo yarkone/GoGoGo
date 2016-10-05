@@ -247,6 +247,9 @@ img {
   font-size: 15px;
   font-weight: 700;
 }
+.nav_ul li a:hover {
+  background: #e20700;
+}
 .nav_ul li a img {
   position: relative;
   top: 3px;
@@ -679,11 +682,26 @@ img {
   display: inline-block;
   float: left;
   width: 329px;
-  height: 15px;
+  height: 18px;
   border: 1px solid #a2a2a2;
   margin-top: 5px;
   padding: 10px;
   font-size: 15px;
+}
+.register_line .item_phone {
+  background: url(../images/common/user.png) no-repeat 315px 10px;
+}
+.register_line .item_password {
+  background: url(../images/common/pwd.png) no-repeat 315px 10px;
+}
+.register_line .item_passwordSure {
+  background: url(../images/common/pwd.png) no-repeat 315px 10px;
+}
+.register_line .item_right {
+  background: url(../images/common/right.png) no-repeat 315px 10px;
+}
+.register_line .item_rightCode {
+  background: url(../images/common/right.png) no-repeat 122px 10px;
 }
 .register_line .register_remember {
   position: relative;
@@ -803,6 +821,67 @@ img {
   position: absolute;
   left: -140px;
   top: 130px;
+}
+
+.frameBox {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+  position: absolute;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+}
+
+.frame, .frame1, .frame2 {
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  left: 50%;
+  top: 180px;
+  border: 2px solid #ccc;
+  margin-left: -150px;
+  background: #FFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 1000;
+  display: none;
+}
+
+.go_login {
+  position: absolute;
+  width: 225px;
+  height: 42px;
+  left: 50%;
+  margin-left: -112px;
+  top: 250px;
+  z-index: 1001;
+  background: url(../images/common/welreg_01.gif) no-repeat 0 -58px;
+  color: #FFF;
+  font: bold 25px "黑体";
+  line-height: 42px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.message_box {
+  width: 225px;
+  height: 120px;
+  margin: 50px 0 0 40px;
+  text-align: center;
+}
+.message_box p {
+  height: 40px;
+  font: 20px "黑体";
+}
+.message_box .message2 {
+  color: #f70800;
 }
 
 /*# sourceMappingURL=main_login_register.css.map */

@@ -1,6 +1,28 @@
 /**
  * Created by my on 2016/9/30.
  */
+
+/**
+ *  顶部和侧边栏接收cookie，验证当前是否有用户登陆
+ *
+ */
+//顶部接收cookie
+var currentUser = $.cookie.getSub("currentUser","uName");
+if(currentUser != undefined) {
+    $(".currentUser").text("欢迎您，" + currentUser);
+    $(".currentZone").text("退出").attr("href","javascript:void(0)");
+    var userHead = $(".user_head img").attr("src");
+    userHead = userHead.substring(0,userHead.length - 4).concat("2");
+    //console.log(userHead)
+    $(".user_head img").attr("src",userHead + ".png");
+    $(".user_name").html("<a href='html/login.html'>"+currentUser+"</a>&nbsp;" + "您好！");
+    $(".currentZone").on("click",function(){
+        $.cookie.unset("currentUser","/UGoShop/");
+        location.reload();
+    });
+}
+
+
 /**
  *  公告向上滚动
  *
@@ -29,6 +51,9 @@ $(function(){
     $(".ab").hover(function(){
         $(this).addClass("hover");
         $(this).next().css("display","block");
+        $(this).click(function(){
+            $("html,body").stop().animate({scrollTop: 0},500);
+        })
     },function(){
         $(this).removeClass("hover");
         $(this).next().css("display","none");
@@ -64,7 +89,6 @@ $("#car_box").hover(function(){
 function car_hide() {
     $("#car_box").slideUp("fast");
 }
-
 
 
 /**

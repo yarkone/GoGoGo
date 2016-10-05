@@ -340,8 +340,8 @@
     left:0;
     top:0;
     display: block;
-    width:850px;
-    height:850px;
+    width:900px;
+    height:900px;
   }
 }
 .product_right{
@@ -444,10 +444,15 @@
     border:1px solid #ccc;
     text-align: center;
     line-height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
     img{
       position: relative;
       top:-3px;
     }
+  }
+  .goods_div_default{
+    border:1px solid $red;
   }
   .goods_p{
     float: left;
@@ -472,10 +477,12 @@
     .decrease{
       border-right: 1px solid #ccc;
       width:24px;
+      cursor: pointer;
     }
     .add{
       border-left: 1px solid #ccc;
       width:24px;
+      cursor: pointer;
     }
   }
   .product_number{

@@ -5,11 +5,10 @@
     function Cookie() {
         // 获取单值cookie
         this.get = function(name) {
-            name = "" + name;
             var start = document.cookie.indexOf(encodeURIComponent(name)) ;
-            if (start == -1) {
-                return "";
-            }
+            //if( start == -1 ) {
+            //    return undefined;
+            //}
             var end = document.cookie.indexOf(';', start) ;
             if(end == -1) {
                 end = document.cookie.length;
@@ -59,9 +58,6 @@
         // 获取多值cookie
         this.getAll = function(name) {
             var obj = {};
-            if (this.get(name) === "") {
-                return "";
-            }
             var arr = this.get(name).split('&');
             for(var i = 0, len = arr.length; i < len; i++) {
                 var tmpArr = arr[i].split(':');
@@ -75,10 +71,6 @@
             var obj = this.getAll(name);
             return obj[subname];
         };
-
-        //this.setSub = function(name, subname, value, expires, path, domain, secure) {
-        //      this.setAll(name, {subname : value}, expires, path, domain, secure);
-        //};
 
         // 清除指定的多值cookie
         this.unsetAll = function(name,path,domain,secure) {

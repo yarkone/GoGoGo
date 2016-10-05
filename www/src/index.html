@@ -6,7 +6,7 @@
         <link type="text/css" rel="stylesheet" href="css/main.css" />
         <script type="text/javascript" src="javascript/lib/jquery-1.8.3.js"></script>
         <link rel="stylesheet" href="javascript/lib/jquery-ui-1.12.1.custom/jquery-ui.css">
-        <script type="text/javascript" src="../javascript/cookie.js"></script>
+        <script type="text/javascript" src="javascript/cookie.js"></script>
         <script type="text/javascript" src="javascript/common.js"></script>
         <script src="javascript/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
     </head>
@@ -26,8 +26,8 @@
                         </ul>
                     </div>
                     <ul class="header_right_ul">
-                        <li><a href="#">注册</a></li>
-                        <li><a href="#">登录</a></li>
+                        <li><a href="html/register.html" class="currentUser">注册</a></li>
+                        <li><a href="html/login.html" class="currentZone">登录</a></li>
                         <li><a href="#">我的订单</a></li>
                         <li><a href="#">物流查询</a></li>
                         <li><a href="#">我的关注</a></li>
@@ -43,12 +43,12 @@
                         <a href="index.html"><img src="images/common/logo.png" alt="" /><img src="images/common/logom.jpg" alt="" /></a>
                     </div>
                     <div class="top_search_box">
-                        <input type="text" placeholder="请输入商品名称或货号" id="tags" class="txt" />
+                        <input type="text" value="请输入商品名称或货号" onfocus="if(this.value!=''){this.value=''};" onblur="if(this.value==''||this.value=='请输入商品名称或货号'){this.value='请输入商品名称或货号';}" id="tags" class="txt" />
                         <input type="button" class="btn" value="搜索"/>
                     </div>
                     <div class="top_car" id="top_car">
                         <img src="images/common/icon2.png" alt="" class="car_img1"/>
-                        <a href="html/car.html" class="car_font">我的购物车</a>
+                        <a href="html/shopping_car.html" class="car_font">我的购物车</a>
                         <span class="car_number">0</span>
                         <img src="images/common/icon2.png" alt="" class="car_img2"/>
                         <div class="car_box" id="car_box">
@@ -1460,7 +1460,7 @@
                             <a href="#"><img src="images/common/user_head.jpg" alt="" /></a>
                         </div>
                         <p class="user_name">
-                            你好！请 <a href="#">登陆</a> | <a href="#">注册</a>
+                            你好！请 <a href="html/login.html">登陆</a> | <a href="html/login.html">注册</a>
                         </p>
                         <div class="user_bottom">
                             <a href="#">我的订单</a>
@@ -1471,7 +1471,7 @@
                 </li>
                 <li class="cart">
                     <a class="ab cart_con"></a>
-                    <div class="hover_out"><a href="#">购物车</a></div>
+                    <div class="hover_out"><a href="html/shopping_car.html">购物车</a></div>
                 </li>
                 <li class="care">
                     <a class="ab care_con"></a>
@@ -1497,7 +1497,7 @@
                 </li>
                 <li class="return">
                     <a class="ab return_con"></a>
-                    <div class="hover_out"><a href="#">回到顶部</a></div>
+                    <div class="hover_out"><a href="javascript:void(0)">回到顶部</a></div>
                 </li>
             </ul>
         </div>

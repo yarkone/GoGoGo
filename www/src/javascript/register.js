@@ -9,7 +9,10 @@ $(function() {
     $(".phone_register").css("background-position","0 -58px");
     $(".phone_register_left").addClass("phone_register_left_click");
     $(".phone_register_right").addClass("click");
+    $(".item").val("");
     $(".tab_register li").click(function(){
+        $(".item").removeClass("item_right item_rightCode");
+        $(".register_prompt").css("display","none");
         $(".register_form input").val("");
         $(".identifyCode").text(getcode());
         $(".tab_register li").css("background-position","0 -102px");
@@ -54,11 +57,12 @@ $(function() {
     $(".item_password").bind("blur",isPassword);
     $(".item_passwordSure").bind("blur",isPasswordSure);
     $(".item_messageCode").bind("blur",isMessageCode);
+
     function isPhone(){
         var regPhone = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
         var regEmail = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
         var promptMsg = $(".item_phone").parent().children().eq(-1);
-        console.log($(".register_way").html())
+        var userName = $.cookie.getSub($(".item_phone").val(),"uName");
         if($(".register_way").html() == "手机号码：&nbsp;"){
             if($(".item_phone").val() == ""){
                 promptMsg.css("display","block").html("手机号码不能为空！");
@@ -67,8 +71,13 @@ $(function() {
                 promptMsg.css("display","block").html("手机号输入非法！");
                 $(".item_phone").focus();
                 return false;
-            } else {
+            } else if(userName != undefined){
+                promptMsg.css("display","block").html("该手机号已被注册！");
+                $(".item_phone").focus();
+                return false;
+            } else if(userName == undefined){
                 promptMsg.css("display","none");
+                $(".item_phone").addClass("item_right");
                 return true;
             }
         } else if($(".register_way").html() == "邮箱号码：&nbsp;"){
@@ -79,8 +88,13 @@ $(function() {
                 promptMsg.css("display","block").html("邮箱号输入非法！");
                 $(".item_phone").focus();
                 return false;
-            } else {
+            } else if(userName != undefined){
+                promptMsg.css("display","block").html("该邮箱号已被注册！");
+                $(".item_phone").focus();
+                return false;
+            } else if(userName == undefined){
                 promptMsg.css("display","none");
+                $(".item_phone").addClass("item_right");
                 return true;
             }
         }
@@ -98,6 +112,7 @@ $(function() {
             return false;
         } else {
             promptMsg.css("display","none");
+            $(".item_code").addClass("item_rightCode");
             return true;
         }
     };
@@ -115,6 +130,7 @@ $(function() {
             return false;
         } else {
             promptMsg.css("display","none");
+            $(".item_password").addClass("item_right");
             return true;
         }
     };
@@ -131,6 +147,7 @@ $(function() {
             return false;
         } else {
             promptMsg.css("display","none");
+            $(".item_passwordSure").addClass("item_right");
             return true;
         }
     };
@@ -147,6 +164,7 @@ $(function() {
             return false;
         } else {
             promptMsg.css("display","none");
+            $(".item_messageCode").addClass("item_right");
             return true;
         }
     };
@@ -163,8 +181,17 @@ $(function() {
         if(!isPhone() | !isCode() | !isPassword() | !isPasswordSure() | !isMessageCode() | !isAgree()){
             return false;
         }else{
-            $.cookie.setAll($(".item_phone").val(),{"uName":$(".item_phone").val(),"uPwd":$(".item_password").val()});
-            //alert("存储成功！");
+            $.cookie.setAll(
+                $(".item_phone").val(),
+                {"uName":$(".item_phone").val(),"uPwd":$(".item_password").val()},
+                undefined,
+                "/UGoShop/");
+            $(".frameBox").css("display","block");
+            $(".message2").text($(".item_phone").val());
+            $(".frame").css("display","block");
+            $(".go_login").click(function(){
+                location.href = "login.html";
+            });
             return true;
         }
     });

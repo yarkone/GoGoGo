@@ -247,6 +247,9 @@ img {
   font-size: 15px;
   font-weight: 700;
 }
+.nav_ul li a:hover {
+  background: #e20700;
+}
 .nav_ul li a img {
   position: relative;
   top: 3px;
@@ -723,6 +726,7 @@ img {
 
 .car_list {
   height: 135px;
+  margin-bottom: 10px;
   border: 1px solid #e5e5e5;
 }
 .car_list li {
@@ -800,10 +804,12 @@ img {
 .num_change .decrease {
   border-right: 1px solid #ccc;
   width: 24px;
+  cursor: pointer;
 }
 .num_change .add {
   border-left: 1px solid #ccc;
   width: 24px;
+  cursor: pointer;
 }
 
 .product_number {

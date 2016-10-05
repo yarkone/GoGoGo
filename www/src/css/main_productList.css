@@ -247,6 +247,9 @@ img {
   font-size: 15px;
   font-weight: 700;
 }
+.nav_ul li a:hover {
+  background: #e20700;
+}
 .nav_ul li a img {
   position: relative;
   top: 3px;

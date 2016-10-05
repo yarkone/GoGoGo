@@ -169,6 +169,9 @@
       color: #FFF;
       font-size: 15px;
       font-weight: 700;
+      &:hover{
+        background: #e20700;
+      }
       img{
         @include pos(relative,3px, auto, auto, -1px);
       }

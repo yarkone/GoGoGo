@@ -183,6 +183,7 @@
 }
 .car_list{
   height:135px;
+  margin-bottom: 10px;
   border:1px solid #e5e5e5;
   li{
     float: left;
@@ -254,10 +255,12 @@
   .decrease{
     border-right: 1px solid #ccc;
     width:24px;
+    cursor: pointer;
   }
   .add{
     border-left: 1px solid #ccc;
     width:24px;
+    cursor: pointer;
   }
 }
 .product_number{
